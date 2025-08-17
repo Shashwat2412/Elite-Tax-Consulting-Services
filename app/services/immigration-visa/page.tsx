@@ -103,7 +103,7 @@ export default function ImmigrationVisaPage() {
                 className="rounded-lg transition-transform group-hover:scale-105"
               />
               <div>
-                <h1 className="text-xl font-bold text-navy-900 group-hover:text-blue-600 transition-colors">
+                <h1 className="text-l font-bold text-navy-900 group-hover:text-blue-600 transition-colors">
                    Elite Tax & Consulting Services
                 </h1>
               </div>
@@ -111,8 +111,8 @@ export default function ImmigrationVisaPage() {
             <div className="flex items-center space-x-4">
               <Link href="/">
                 <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent">
-                  <ArrowLeft className="h-4 w-4 mr-2" />
-                  Back to Home
+                  {/* <ArrowLeft className="h-4 w-4 mr-2" /> */}
+                  Home
                 </Button>
               </Link>
               <Button className="bg-blue-600 hover:bg-blue-700">

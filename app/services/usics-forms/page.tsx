@@ -113,7 +113,7 @@ export default function USCISFormsPage() {
                 className="rounded-lg transition-transform group-hover:scale-105"
               />
               <div>
-                <h1 className="text-xl font-bold text-navy-900 group-hover:text-indigo-600 transition-colors">
+                <h1 className="text-l font-bold text-navy-900 group-hover:text-indigo-600 transition-colors">
                    Elite Tax & Consulting Services
                 </h1>
               </div>
@@ -124,8 +124,8 @@ export default function USCISFormsPage() {
                   variant="outline"
                   className="border-indigo-600 text-indigo-600 hover:bg-indigo-50 bg-transparent"
                 >
-                  <ArrowLeft className="h-4 w-4 mr-2" />
-                  Back to Home
+                  {/* <ArrowLeft className="h-4 w-4 mr-2" /> */}
+                  Home
                 </Button>
               </Link>
               <Button className="bg-indigo-600 hover:bg-indigo-700">
