@@ -176,7 +176,7 @@ export default function HomePage() {
         "Work Permit Applications",
         "Travel Document Assistance",
         "Immigration Case Expedite",
-        "Family Petitions"
+        "Family Petitions",
       ],
       href: "/services/immigration-visa",
       gradient: "from-blue-500 to-blue-600",
@@ -192,7 +192,7 @@ export default function HomePage() {
         "Form I-765 (Work Permit)",
         "Form I-131 (Travel Document)",
         "Form N-400 (Citizenship)",
-        "Form DS-160/DS-260"
+        "Form DS-160/DS-260",
       ],
       href: "/services/usics-forms",
       gradient: "from-blue-500 to-blue-600",
@@ -303,9 +303,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Enhanced Header with Contact Info */}
       <header className="bg-white shadow-sm border-b border-blue-100 sticky top-0 z-50">
-        {/* Top Contact Bar - Hidden on mobile */}
         <div className="bg-navy-900 text-white py-2 hidden md:block">
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center text-sm">
@@ -327,20 +325,15 @@ export default function HomePage() {
               <div className="flex items-center space-x-4">
                 <span>Follow Us:</span>
                 <div className="flex space-x-2">
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    className="text-white hover:text-blue-300 hover:bg-blue-800/20 p-1 transition-all duration-200"
-                  >
-                    Facebook
-                  </Button>
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    className="text-white hover:text-blue-300 hover:bg-blue-800/20 p-1 transition-all duration-200"
-                  >
-                    LinkedIn
-                  </Button>
+                  <Link href="https://www.instagram.com/elite_taxandconsultingservices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-blue-600 text-blue-300 hover:bg-blue-800 hover:text-white bg-transparent hover:scale-105 transition-all duration-200 w-fit text-xs md:text-sm"
+                    >
+                      Instagram
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -364,7 +357,6 @@ export default function HomePage() {
                 <h1 className="text-lg md:text-xl font-bold text-navy-900 group-hover:text-blue-600 transition-colors">
                    Elite Tax & Consulting Services
                 </h1>
-                {/* <p className="text-xs md:text-sm text-blue-600">Professional Services</p> */}
               </div>
             </Link>
 
@@ -445,26 +437,26 @@ export default function HomePage() {
 
       {/* Hero Section with Banner and Overlapping Form */}
       <section className="relative bg-white">
-        {/* Banner Image - Responsive height */}
-        <div className="relative h-[40vh] md:h-[55vh] overflow-hidden bg-white">
+         <div className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden bg-gradient-to-r from-blue-900 to-blue-700">
           <Image
             src={banner || "/placeholder.svg"}
             alt="Professional Tax and Immigration Services - Collaborative Business Meeting"
             fill
-            className="object-contain"
+            className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 "></div>
-
-          {/* Banner Content - Better mobile layout */}
-          <div className="absolute inset-0 flex items-center px-2 md:px-0">
-            <div className="container mx-auto px-2 md:px-4 h-full flex items-center">
+          <div className="absolute inset-0 flex items-center px-4 sm:px-6 md:px-8">
+            <div className="container mx-auto px-4 h-full flex items-center">
               <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center w-full">
                 {/* Left Side - Content */}
-                <div className="text-white space-y-3 md:space-y-4 lg:space-y-8 animate-fade-in pr-2 md:pr-0">
-                  <div className="space-y-4 md:space-y-6">
-                    <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight"> Elite Tax & Consulting Services</h1>
-                    <p className="text-sm md:text-xl lg:text-2xl text-blue-100 leading-relaxed">
+                    <div className="text-white space-y-4 sm:space-y-6 md:space-y-8 animate-fade-in pr-4 lg:pr-8">
+
+                  <div className="space-y-3 sm:space-y-4 md:space-y-6">
+
+                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                      Elite Tax & Consulting Services
+                    </h1>
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-blue-100 leading-relaxed">
                       Maximize your tax savings by up to 50% with Elite Tax Consulting Services
                     </p>
                   </div>
@@ -472,14 +464,14 @@ export default function HomePage() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button
                       size="lg"
-                      className="bg-orange-500 hover:bg-orange-600 text-white px-4 md:px-8 py-3 md:py-4 text-sm md:text-lg font-semibold transform hover:scale-105 transition-all duration-200"
+                      className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base md:text-lg font-semibold transform hover:scale-105 transition-all duration-200"
                     >
                       BOOK A FREE CONSULTATION
                     </Button>
                   </div>
 
                   {/* Stats Grid - Better mobile display */}
-                  <div className="grid grid-cols-2 gap-2 md:gap-3 lg:gap-6 pt-3 md:pt-4 lg:pt-8">
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 pt-4 sm:pt-6 md:pt-8">
                     {[
                       { number: "500+", label: "Happy Clients" },
                       { number: "4+", label: "Years Experience" },
@@ -487,10 +479,10 @@ export default function HomePage() {
                       { number: "100%", label: "Compliance Rate" },
                     ].map((stat, index) => (
                       <div key={index} className="text-center">
-                        <div className="text-base md:text-lg lg:text-3xl font-bold text-blue-300 mb-1 md:mb-2">
+                        <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-blue-300 mb-1 sm:mb-2">
                           {stat.number}
                         </div>
-                        <div className="text-xs md:text-sm text-blue-100">{stat.label}</div>
+                        <div className="text-xs sm:text-sm md:text-base text-blue-100">{stat.label}</div>
                       </div>
                     ))}
                   </div>
@@ -504,34 +496,39 @@ export default function HomePage() {
         </div>
 
         {/* Overlapping Form - Enhanced with new fields */}
-        <div className="absolute top-1/2 right-2 md:right-4 lg:right-16 xl:right-64 transform -translate-y-1/6 z-20 w-full max-w-xs md:max-w-sm lg:max-w-md px-2 md:px-0">
-          <Card id="consultation-form" className="bg-white shadow-2xl border-0 animate-slide-in-right mx-4 lg:mx-0">
-            <CardHeader className="bg-blue-500 text-white text-center rounded-t-lg pb-4 md:pb-6 pt-6 md:pt-8 -mt-4 md:-mt-6">
-              <CardTitle className="text-lg md:text-2xl font-bold">Book a Free Consultation</CardTitle>
+          {/* Overlapping Form - Desktop only */}
+        <div className="hidden lg:block absolute top-1/2 right-4 sm:right-6 md:right-8 lg:right-16 xl:right-64 transform -translate-y-1/6 z-20 w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-md px-2 sm:px-0">
+          <Card
+            id="consultation-form"
+            className="bg-white shadow-2xl border-0 animate-slide-in-right mx-2 sm:mx-4 lg:mx-0"
+          >
+            <CardHeader className="bg-blue-500 text-white text-center rounded-t-lg pb-4 sm:pb-6 pt-4 sm:pt-6 md:pt-8 -mt-2 sm:-mt-4 md:-mt-6">
+              <CardTitle className="text-base sm:text-lg md:text-2xl font-bold">Book a Free Consultation</CardTitle>
             </CardHeader>
-            <CardContent className="p-4 md:p-6">
+              <CardContent className="p-3 sm:p-4 md:p-6">
               {isFormSubmitted ? (
-                <div className="text-center py-6 md:py-8 animate-fade-in">
-                  <CheckCircle className="h-12 md:h-16 w-12 md:w-16 text-green-500 mx-auto mb-4 animate-bounce" />
-                  <h3 className="text-lg md:text-xl font-semibold text-navy-900 mb-2">Thank You!</h3>
-                  <p className="text-sm md:text-base text-gray-600 mb-4">
+                <div className="text-center py-4 sm:py-6 md:py-8 animate-fade-in">
+                  <CheckCircle className="h-10 sm:h-12 md:h-16 w-10 sm:w-12 md:w-16 text-green-500 mx-auto mb-3 sm:mb-4 animate-bounce" />
+                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-navy-900 mb-2">Thank You!</h3>
+                  <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-3 sm:mb-4">
                     Your consultation has been scheduled. Check your email for confirmation and Google Meet link.
                   </p>
                   <Badge className="bg-green-100 text-green-800 animate-pulse">
-                    <Calendar className="h-4 w-4 mr-1" />
+                  <Calendar className="h-3 sm:h-4 w-3 sm:w-4 mr-1" />
                     Meeting Scheduled
                   </Badge>
                 </div>
               ) : (
-                <form onSubmit={handleFormSubmit} className="space-y-3 md:space-y-4">
-                  <div className="grid grid-cols-2 gap-2 md:gap-3">
+
+                <form onSubmit={handleFormSubmit} className="space-y-2 sm:space-y-3 md:space-y-4">
+                  <div className="grid grid-cols-2 gap-2 sm:gap-3">
                     <div>
                       <Input
                         placeholder="First name*"
                         value={formData.firstName}
                         onChange={(e) => handleInputChange("firstName", e.target.value)}
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm"
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-xs text-xs sm:text-sm h-8 sm:h-10"
                       />
                     </div>
                     <div>
@@ -540,12 +537,11 @@ export default function HomePage() {
                         value={formData.lastName}
                         onChange={(e) => handleInputChange("lastName", e.target.value)}
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm"
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-xs sm:text-sm h-8 sm:h-10"
                       />
                     </div>
                   </div>
-
-                  <div className="grid grid-cols-2 gap-2 md:gap-3">
+                  <div className="grid grid-cols-2 gap-2 sm:gap-3">
                     <div>
                       <Input
                         type="email"
@@ -553,7 +549,7 @@ export default function HomePage() {
                         value={formData.email}
                         onChange={(e) => handleInputChange("email", e.target.value)}
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm"
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-xs sm:text-sm h-8 sm:h-10"
                       />
                     </div>
                     <div>
@@ -563,7 +559,7 @@ export default function HomePage() {
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
                         required
-                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm"
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-xs sm:text-sm h-8 sm:h-10"
                       />
                     </div>
                   </div>
@@ -573,13 +569,13 @@ export default function HomePage() {
                       placeholder="Company name"
                       value={formData.company}
                       onChange={(e) => handleInputChange("company", e.target.value)}
-                      className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm"
+                      className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-xs sm:text-sm h-8 sm:h-10"
                     />
                   </div>
 
                   <div>
                     <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
-                      <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm">
+                      <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-xs sm:text-sm h-8 sm:h-10">
                         <SelectValue placeholder="What service are you looking for?*" />
                       </SelectTrigger>
                       <SelectContent>
@@ -681,6 +677,360 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="lg:hidden py-8 bg-gray-50">
+
+        <div className="container mx-auto px-4">
+
+          <Card className="bg-white shadow-xl border-0 max-w-md mx-auto">
+
+            <CardHeader className="bg-blue-500 text-white text-center rounded-t-lg pb-6 pt-6">
+
+              <CardTitle className="text-xl font-bold">Book a Free Consultation</CardTitle>
+
+            </CardHeader>
+
+            <CardContent className="p-6">
+
+              {isFormSubmitted ? (
+
+                <div className="text-center py-6 animate-fade-in">
+
+                  <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4 animate-bounce" />
+
+                  <h3 className="text-lg font-semibold text-navy-900 mb-2">Thank You!</h3>
+
+                  <p className="text-sm text-gray-600 mb-4">
+
+                    Your consultation has been scheduled. Check your email for confirmation and Google Meet link.
+
+                  </p>
+
+                  <Badge className="bg-green-100 text-green-800 animate-pulse">
+
+                    <Calendar className="h-4 w-4 mr-1" />
+
+                    Meeting Scheduled
+
+                  </Badge>
+
+                </div>
+
+              ) : (
+
+                <form onSubmit={handleFormSubmit} className="space-y-4">
+
+                  <div className="grid grid-cols-2 gap-3">
+
+                    <div>
+
+                      <Input
+
+                        placeholder="First name*"
+
+                        value={formData.firstName}
+
+                        onChange={(e) => handleInputChange("firstName", e.target.value)}
+
+                        required
+
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10"
+
+                      />
+
+                    </div>
+
+                    <div>
+
+                      <Input
+
+                        placeholder="Last name*"
+
+                        value={formData.lastName}
+
+                        onChange={(e) => handleInputChange("lastName", e.target.value)}
+
+                        required
+
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10"
+
+                      />
+
+                    </div>
+
+                  </div>
+
+
+
+                  <div className="grid grid-cols-2 gap-3">
+
+                    <div>
+
+                      <Input
+
+                        type="email"
+
+                        placeholder="Email*"
+
+                        value={formData.email}
+
+                        onChange={(e) => handleInputChange("email", e.target.value)}
+
+                        required
+
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10"
+
+                      />
+
+                    </div>
+
+                    <div>
+
+                      <Input
+
+                        type="tel"
+
+                        placeholder="Phone*"
+
+                        value={formData.phone}
+
+                        onChange={(e) => handleInputChange("phone", e.target.value)}
+
+                        required
+
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10"
+
+                      />
+
+                    </div>
+
+                  </div>
+
+
+
+                  <div>
+
+                    <Input
+
+                      placeholder="Company name"
+
+                      value={formData.company}
+
+                      onChange={(e) => handleInputChange("company", e.target.value)}
+
+                      className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10"
+
+                    />
+
+                  </div>
+
+
+
+                  <div>
+
+                    <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
+
+                      <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10">
+
+                        <SelectValue placeholder="What service are you looking for?*" />
+
+                      </SelectTrigger>
+
+                      <SelectContent>
+
+                        <SelectItem value="tax-services">Personal Tax Services</SelectItem>
+
+                        <SelectItem value="business-tax">Business Tax Services</SelectItem>
+
+                        <SelectItem value="immigration-visa">Immigration & Visa Services</SelectItem>
+
+                        <SelectItem value="uscis-forms">USCIS & Immigration Forms</SelectItem>
+
+                        <SelectItem value="legal-documents">Legal & Documentation Services</SelectItem>
+
+                        <SelectItem value="business-services">Business & Corporate Services</SelectItem>
+
+                        <SelectItem value="trucking-services">Trucking Compliance & Setup</SelectItem>
+
+                        <SelectItem value="other">Other / Not Sure</SelectItem>
+
+                      </SelectContent>
+
+                    </Select>
+
+                  </div>
+
+
+
+                  <div className="grid grid-cols-2 gap-3">
+
+                    <div>
+
+                      <Input
+
+                        type="date"
+
+                        placeholder="Preferred Date"
+
+                        value={formData.meetingDate}
+
+                        onChange={(e) => handleInputChange("meetingDate", e.target.value)}
+
+                        className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10"
+
+                        min={new Date().toISOString().split("T")[0]}
+
+                      />
+
+                    </div>
+
+                    <div>
+
+                      <Select
+
+                        value={formData.meetingTime}
+
+                        onValueChange={(value) => handleInputChange("meetingTime", value)}
+
+                      >
+
+                        <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10">
+
+                          <SelectValue placeholder="Time" />
+
+                        </SelectTrigger>
+
+                        <SelectContent>
+
+                          <SelectItem value="9:00 AM">9:00 AM</SelectItem>
+
+                          <SelectItem value="10:00 AM">10:00 AM</SelectItem>
+
+                          <SelectItem value="11:00 AM">11:00 AM</SelectItem>
+
+                          <SelectItem value="12:00 PM">12:00 PM</SelectItem>
+
+                          <SelectItem value="1:00 PM">1:00 PM</SelectItem>
+
+                          <SelectItem value="2:00 PM">2:00 PM</SelectItem>
+
+                          <SelectItem value="3:00 PM">3:00 PM</SelectItem>
+
+                          <SelectItem value="4:00 PM">4:00 PM</SelectItem>
+
+                          <SelectItem value="5:00 PM">5:00 PM</SelectItem>
+
+                        </SelectContent>
+
+                      </Select>
+
+                    </div>
+
+                  </div>
+
+
+
+                  <div>
+
+                    <Select value={formData.hearAbout} onValueChange={(value) => handleInputChange("hearAbout", value)}>
+
+                      <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm h-10">
+
+                        <SelectValue placeholder="How did you hear about Elite Tax?" />
+
+                      </SelectTrigger>
+
+                      <SelectContent>
+
+                        <SelectItem value="google">Google Search</SelectItem>
+
+                        <SelectItem value="referral">Referral</SelectItem>
+
+                        <SelectItem value="social-media">Social Media</SelectItem>
+
+                        <SelectItem value="advertisement">Advertisement</SelectItem>
+
+                        <SelectItem value="other">Other</SelectItem>
+
+                      </SelectContent>
+
+                    </Select>
+
+                  </div>
+
+
+
+                  <div>
+
+                    <Textarea
+
+                      placeholder="Do you have any specific questions for us?"
+
+                      value={formData.questions}
+
+                      onChange={(e) => handleInputChange("questions", e.target.value)}
+
+                      rows={2}
+
+                      className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm"
+
+                    />
+
+                  </div>
+
+
+
+                  <div>
+
+                    <Textarea
+
+                      placeholder="Additional message (optional)"
+
+                      value={formData.message}
+
+                      onChange={(e) => handleInputChange("message", e.target.value)}
+
+                      rows={2}
+
+                      className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-sm"
+
+                    />
+
+                  </div>
+
+
+
+                  <div className="text-xs text-gray-600">
+
+                    By providing your information you agree to our privacy policy.
+
+                  </div>
+
+
+
+                  <Button
+
+                    type="submit"
+
+                    className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
+
+                  >
+
+                    SUBMIT
+
+                  </Button>
+
+                </form>
+
+              )}
+
+            </CardContent>
+
+          </Card>
+
+        </div>
+
+      </section>
+
       {/* Content Section - Better mobile spacing */}
       <section className="py-8 md:py-16 bg-gray-50 pt-20 md:pt-24" id="about">
         <div className="container mx-auto px-4">
@@ -714,97 +1064,6 @@ export default function HomePage() {
                 regulations to ensure full compliance and maximum benefits for our clients.
               </p>
             </div>
-
-            {/* Right Column - Why Choose Us - Better mobile positioning */}
-            {/* <div className="bg-white p-4 md:p-6 lg:p-8 rounded-lg shadow-lg order-1 lg:order-2 lg:my-32 xl:my-64">
-              <h3 className="text-xl md:text-2xl font-bold text-navy-900 mb-4 md:mb-6">
-                Why Choose Elite Tax Consulting?
-              </h3>
-              <div className="space-y-4">
-                {[
-                  {
-                    icon: <Users className="h-6 w-6 text-blue-600" />,
-                    title: "Experienced Professionals",
-                    description: "Licensed tax experts and immigration consultants",
-                  },
-                  {
-                    icon: <Zap className="h-6 w-6 text-blue-600" />,
-                    title: "Fast Turnaround",
-                    description: "Quick processing for time-sensitive requests",
-                  },
-                  {
-                    icon: <Shield className="h-6 w-6 text-blue-600" />,
-                    title: "100% Compliance",
-                    description: "Full compliance with government guidelines",
-                  },
-                  {
-                    icon: <Heart className="h-6 w-6 text-blue-600" />,
-                    title: "Multilingual Support",
-                    description: "Services in multiple languages",
-                  },
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="bg-blue-100 rounded-full p-2 flex-shrink-0">{item.icon}</div>
-                    <div>
-                      <h4 className="font-semibold text-navy-900">{item.title}</h4>
-                      <p className="text-gray-600 text-sm">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div> */}
-
-
-             {/* <div className="bg-white p-4 md:p-6 lg:p-8 rounded-lg shadow-lg order-1 lg:order-2 lg:my-32 xl:my-80">
-              <div className="text-center mb-6 md:mb-8">
-                <h3 className="text-xl md:text-2xl font-bold text-navy-900 mb-4">
-                  Get your taxes done right and your biggest tax refund—
-                  <span className="text-blue-600">guaranteed</span>
-                </h3>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                {[
-                  {
-                    title: "TAX RETURN LIFETIME GUARANTEE",
-                    subtitle: "Your tax return, backed for life™",
-                    description: "100% accuracy guaranteed. All backed by the full faith and credit of our guarantee.",
-                    icon: "🛡️",
-                  },
-                  {
-                    title: "MAXIMUM REFUND GUARANTEE",
-                    subtitle: "Your best tax outcome",
-                    description:
-                      "We'll find every deduction and credit to help you'll get your maximum refund, guaranteed or your money back.",
-                    icon: "💰",
-                  },
-                  {
-                    title: "100% ACCURATE GUARANTEE",
-                    subtitle: "Taxes done right",
-                    description: "Your taxes will be done right, guaranteed, or we'll pay any IRS penalties.",
-                    icon: "✅",
-                  },
-                ].map((guarantee, index) => (
-                  <div key={index} className="text-center">
-                    <div className="relative mb-4">
-                      <div className="w-20 h-20 mx-auto bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg border-4 border-yellow-300">
-                        <div className="text-2xl">{guarantee.icon}</div>
-                      </div>
-                      <div className="absolute inset-0 w-20 h-20 mx-auto rounded-full border-2 border-dashed border-yellow-600 animate-spin-slow"></div>
-                    </div>
-                    <h4 className="font-bold text-navy-900 text-sm mb-2 leading-tight">{guarantee.title}</h4>
-                    <p className="font-semibold text-blue-600 text-sm mb-2">{guarantee.subtitle}</p>
-                    <p className="text-gray-600 text-xs leading-relaxed">{guarantee.description}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="text-center">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 text-sm font-semibold transform hover:scale-105 transition-all duration-200">
-                  Get Your Guaranteed Refund
-                </Button>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
@@ -973,7 +1232,7 @@ export default function HomePage() {
           )}
 
           {/* Reviews Display */}
-          {reviewsData && !reviewsLoading && (
+          {/* {reviewsData && !reviewsLoading && (
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
                 {reviewsData.reviews.slice(0, 4).map((review) => (
@@ -1020,7 +1279,7 @@ export default function HomePage() {
                 </p>
               </div>
             </>
-          )}
+          )} */}
         </div>
       </section>
 
@@ -1210,7 +1469,6 @@ export default function HomePage() {
                 />
                 <div>
                   <h3 className="font-bold text-sm md:text-base">Elite Tax Consulting</h3>
-                  {/* <p className="text-xs md:text-sm text-blue-300">Professional Services</p> */}
                 </div>
               </div>
               <p className="text-blue-100 text-xs md:text-sm">
@@ -1256,20 +1514,15 @@ export default function HomePage() {
             <div className="animate-slide-in-up" style={{ animationDelay: "0.3s" }}>
               <h4 className="font-semibold mb-4 text-sm md:text-base">Follow Us</h4>
               <div className="flex flex-col space-y-2">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="border-blue-600 text-blue-300 hover:bg-blue-800 hover:text-white bg-transparent hover:scale-105 transition-all duration-200 w-fit text-xs md:text-sm"
-                >
-                  Facebook
-                </Button>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="border-blue-600 text-blue-300 hover:bg-blue-800 hover:text-white bg-transparent hover:scale-105 transition-all duration-200 w-fit text-xs md:text-sm"
-                >
-                  LinkedIn
-                </Button>
+                <Link href="https://www.instagram.com/elite_taxandconsultingservices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-blue-600 text-blue-300 hover:bg-blue-800 hover:text-white bg-transparent hover:scale-105 transition-all duration-200 w-fit text-xs md:text-sm"
+                    >
+                      Instagram
+                    </Button>
+                  </Link>
               </div>
             </div>
           </div>

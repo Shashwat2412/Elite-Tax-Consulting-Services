@@ -45,7 +45,7 @@ export function MobileMenu({ services }: MobileMenuProps) {
             >
               Home
             </Link>
-             <Link href="/blog" className="text-white hover:text-blue-200 block px-3 py-2 transition-colors">
+             <Link href="/blog" className="block py-2 text-navy-800 hover:text-blue-600 transition-colors">
             Blog
           </Link>
             
