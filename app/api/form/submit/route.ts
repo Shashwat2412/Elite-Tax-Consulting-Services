@@ -244,10 +244,10 @@ export async function POST(request: Request) {
       console.log("All emails sent successfully!")
     } catch (emailError) {
       console.error("Error sending emails:", emailError)
-      console.error("Email error details:", emailError.message)
+      // console.error("Email error details:", emailError.message)
 
       // Don't throw error, just log it
-      emailResults.error = emailError.message
+      // emailResults.error = emailError.message
     }
 
     // Try to save to Google Sheets (will work once OAuth is properly set up)
@@ -295,7 +295,7 @@ export async function POST(request: Request) {
         console.log("No access token available - skipping Google Sheets")
       }
     } catch (sheetError) {
-      console.log("Google Sheets not configured yet - skipping:", sheetError.message)
+      console.log("Google Sheets not configured yet - skipping:")
     }
 
     return NextResponse.json({
@@ -315,7 +315,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error: "Failed to process submission",
-        details: error.message,
+        // details: error.message,
       },
       { status: 500 },
     )

@@ -146,7 +146,7 @@ export async function POST(request: Request) {
               <div style="max-height: 200px; overflow-y: auto; font-size: 14px;">
                 ${data.messages
                   .map(
-                    (msg) => `
+                    (msg: {sender: string; text:string}) => `
                   <div style="margin-bottom: 10px; padding: 8px; background: ${msg.sender === "user" ? "#dbeafe" : "#f3f4f6"}; border-radius: 4px;">
                     <strong>${msg.sender === "user" ? "👤 User" : "🤖 Bot"}:</strong> ${msg.text}
                   </div>
@@ -185,7 +185,7 @@ export async function POST(request: Request) {
       emailResults.adminEmail = true
     } catch (emailError) {
       console.error("Error sending chat emails:", emailError)
-      emailResults.error = emailError.message
+      // emailResults.error = emailError.message
     }
 
     // Try to save to Google Sheets (will work once OAuth is properly set up)
@@ -231,7 +231,7 @@ export async function POST(request: Request) {
         console.log("No access token available - skipping Google Sheets")
       }
     } catch (sheetError) {
-      console.log("Google Sheets not configured yet - skipping:", sheetError.message)
+      console.log("Google Sheets not configured yet - skipping:")
     }
 
     return NextResponse.json({
