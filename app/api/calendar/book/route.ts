@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 import { NextResponse } from "next/server"
 import { Resend } from "resend"
 
@@ -220,7 +210,7 @@ export async function POST(request: Request) {
       console.log("Chat meeting emails sent successfully")
     } catch (emailError) {
       console.error("Error sending chat meeting emails:", emailError)
-      emailResults.error = emailError.message
+      // emailResults.error = emailError.message
     }
 
     return NextResponse.json({
