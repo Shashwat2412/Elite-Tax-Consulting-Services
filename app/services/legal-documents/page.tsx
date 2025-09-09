@@ -28,7 +28,7 @@ export default function BusinessServicesPage() {
         "Business license assistance",
       ],
       icon: <Building className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa6.jpg",
     },
     {
       title: "MC & DOT for Trucking",
@@ -45,7 +45,7 @@ export default function BusinessServicesPage() {
         "Trucking permit services",
       ],
       icon: <Truck className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa8.jpg",
     },
   ]
 
@@ -281,7 +281,7 @@ export default function BusinessServicesPage() {
                       className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
                     >
                       <Building className="h-4 w-4 mr-2" />
-                      Get Quote
+                       Having a question? connect with a speacialist
                     </Button>
                   </div>
                 </div>

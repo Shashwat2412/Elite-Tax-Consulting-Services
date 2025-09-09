@@ -18,60 +18,99 @@ export default function USCISFormsPage() {
       description:
         "Complete assistance with family-based immigration forms to reunite with your loved ones in the United States.",
       features: [
-        "Form I-130 (Petition for Alien Relative)",
-        "Form I-485 (Adjustment of Status)",
-        "Form I-864 (Affidavit of Support)",
-        "Form I-131 (Travel Document)",
-        "Form I-765 (Work Authorization)",
-        "Form I-693 (Medical Examination)",
+        "Form I-130 – Petition for Alien Relative",
+        "Form I-864 – Affidavit of Support",
+        "Form I-730 – Refugee/Asylee Relative Petition",
       ],
       icon: <Heart className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/fam.jpg",
     },
     {
       title: "Employment-Based Immigration Forms",
       description:
         "Professional guidance for employment-based immigration forms and work authorization applications.",
       features: [
-        "Form I-140 (Immigrant Petition)",
-        "Form I-485 (Adjustment of Status)",
-        "Form I-765 (Employment Authorization)",
-        "Form I-94 (Arrival/Departure Record)",
-        "PERM Labor Certification",
-        "H-1B, L-1, O-1 Applications",
+        "Form I-140 – Immigrant Petition for Alien Worker",
+        // "Form I-485 (Adjustment of Status)",
+        // "Form I-765 (Employment Authorization)",
+        // "Form I-94 (Arrival/Departure Record)",
+        // "PERM Labor Certification",
+        // "H-1B, L-1, O-1 Applications",
       ],
       icon: <Users className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/employment.jpg",
     },
+    // {
+    //   title: "Citizenship & Naturalization Forms",
+    //   description:
+    //     "Expert assistance with citizenship applications and naturalization process documentation.",
+    //   features: [
+    //     "Form N-400 (Citizenship Application)",
+    //     "Form N-600 (Certificate of Citizenship)",
+    //     "Form N-565 (Replacement Certificate)",
+    //     "Citizenship test preparation",
+    //     "Interview preparation",
+    //     "Document translation services",
+    //   ],
+    //   icon: <Award className="h-8 w-8" />,
+    //   image: "/placeholder.svg?height=300&width=400",
+    // },
+    // {
+    //   title: "Consular Processing Forms",
+    //   description:
+    //     "Complete support for consular processing and visa applications through US embassies and consulates.",
+    //   features: [
+    //     "Form DS-160 (Online Application)",
+    //     "Form DS-260 (Immigrant Visa)",
+    //     "Form DS-230 (Visa Application)",
+    //     "NVC document preparation",
+    //     "Interview scheduling assistance",
+    //     "Embassy appointment support",
+    //   ],
+    //   icon: <Globe className="h-8 w-8" />,
+    //   image: "/placeholder.svg?height=300&width=400",
+    // },
     {
-      title: "Citizenship & Naturalization Forms",
+      title: " Humanitarian & Special Petitions",
       description:
-        "Expert assistance with citizenship applications and naturalization process documentation.",
+        "Provides immigration relief for vulnerable individuals, humanitarian cases, and special immigrants.",
       features: [
-        "Form N-400 (Citizenship Application)",
-        "Form N-600 (Certificate of Citizenship)",
-        "Form N-565 (Replacement Certificate)",
-        "Citizenship test preparation",
-        "Interview preparation",
-        "Document translation services",
+        "Form I-360 – Amerasian, Widow(er), or Special Immigrant (including VAWA)",
+        "Form I-589 – Application for Asylum & Withholding of Removal",
       ],
       icon: <Award className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa14.jpg",
     },
     {
-      title: "Consular Processing Forms",
+      title: "Adjustment of Status & Residency",
       description:
-        "Complete support for consular processing and visa applications through US embassies and consulates.",
+        "Allows eligible applicants to adjust their immigration status to lawful permanent residency.",
       features: [
-        "Form DS-160 (Online Application)",
-        "Form DS-260 (Immigrant Visa)",
-        "Form DS-230 (Visa Application)",
-        "NVC document preparation",
-        "Interview scheduling assistance",
-        "Embassy appointment support",
+        "Form I-485 – Application to Register Permanent Residence or Adjust Status",
       ],
-      icon: <Globe className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      icon: <Award className="h-8 w-8" />,
+      image: "/visa19.jpg",
+    },
+    {
+      title: "Travel & Entry Documents",
+      description:
+        "Grants authorization for international travel, reentry, or lawful entry into the United States.",
+      features: [
+        "Form I-131 – Application for Travel Document / Advance Parole / Humanitarian Parole",
+        "Form I-94 – Arrival/Departure Record",
+      ],
+      icon: <Award className="h-8 w-8" />,
+      image: "/visa18.jpg",
+    },
+    {
+      title: "Supporting Documentation",
+      description:
+        "Essential records verifying health, eligibility, vaccinations, and compliance with immigration requirements.",
+      features: [
+        "Form I-693 – Report of Medical Examination and Vaccination Record",
+      ],
+      icon: <Award className="h-8 w-8" />,
+      image: "/visa17.jpg",
     },
   ]
 
@@ -237,7 +276,7 @@ export default function USCISFormsPage() {
                       className="border-indigo-600 text-indigo-600 hover:bg-indigo-50 bg-transparent"
                     >
                       <Scale className="h-4 w-4 mr-2" />
-                      Get Quote
+                       Having a question? connect with a speacialist
                     </Button>
                   </div>
                 </div>

@@ -19,49 +19,54 @@ export default function ImmigrationVisaPage() {
         "We assist with visa applications for Canada, USA, India, Australia, Nepal, Germany, Italy, and Spain.",
       countries: ["Canada", "USA", "India", "Australia", "Nepal", "Germany", "Italy", "Spain"],
       icon: <Globe className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa2.jpg",
     },
     {
-      title: "blue Card Applications",
+      title: "Green Card Applications",
       description: "End-to-end guidance to help you become a lawful permanent resident of the United States.",
       features: [
-        "Family-based blue cards",
-        "Employment-based blue cards",
-        "Investment-based blue cards",
+        "Family-based green cards",
+        "Employment-based green cards",
+        "Investment-based green cards",
         "Diversity visa program",
         "Adjustment of status",
         "Consular processing",
+        "US tourist visa from any country with appointment support at very reasonable cost",
       ],
       icon: <FileCheck className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/greencardvisa.jpg",
     },
     {
       title: "Work Permit Applications",
       description: "Secure employment authorization with our expert help.",
       features: [
-        "H-1B work visas",
-        "L-1 intracompany transfers",
-        "O-1 extraordinary ability",
-        "TN NAFTA professionals",
-        "EAD applications",
-        "PERM labor certification",
+        "(a)(5)    Asylee",
+        "(a)(10)   Withholding of deportation or removal granted  ",
+        "(c)(8)    Asylum application pending",
+        "(c)(9)    Pending adjustment of status  ",
+        "(c)(31)   VAWA self-petitioners with an approved Form I-360 ",
+        "(c)(3)(C) F-1 student",
+        "(a)(19)   U-1 nonimmigrant",
+        "Form I-765 – Application for Employment Authorization (EAD)",
       ],
       icon: <Users className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa3.jpg",
     },
     {
       title: "OCI (Overseas Citizenship of India)",
       description: "We handle OCI card applications efficiently for those of Indian origin.",
       features: [
         "OCI application preparation",
-        "Document verification",
+        "10 year regular India visa",
         "Appointment scheduling",
-        "Status tracking",
-        "Renewal services",
-        "Emergency travel documents",
+        "Renunciation",
+        "India e visa",
+        "Emergency Slip",
+        "Power of Attorney ",
+        "Parents Autorization form for kids passport to be issued in India",
       ],
       icon: <Heart className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa4.jpg",
     },
   ]
 
@@ -82,8 +87,8 @@ export default function ImmigrationVisaPage() {
       icon: <Clock className="h-6 w-6" />,
     },
     {
-      title: "US Visa Early Appointment Booking",
-      description: "We help you schedule early visa appointments when time matters.",
+      title: "US Visa Appointment Booking",
+      description: "We can help you with us visa interview and biometric appointment as soon as possible",
       icon: <Plane className="h-6 w-6" />,
     },
   ]
@@ -242,7 +247,7 @@ export default function ImmigrationVisaPage() {
                       className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
                     >
                       <Globe className="h-4 w-4 mr-2" />
-                      Get Quote
+                       Having a question? connect with a speacialist
                     </Button>
                   </div>
                 </div>

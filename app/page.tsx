@@ -1041,8 +1041,8 @@ export default function HomePage() {
                 About Elite Tax Consulting Services
               </h2>
               <p className="text-base md:text-lg">
-                At Elite Tax Consulting Services, we offer a wide range of services to cater to your personal, legal,
-                immigration, and business needs. Our experienced team provides comprehensive solutions for individuals,
+                At Elite Tax Consulting Services, we offer a wide range of services to cater to your personal, 
+                immigration forms assistance and business needs. Our experienced team provides comprehensive solutions for individuals,
                 families, and businesses across multiple industries.
               </p>
 
@@ -1081,7 +1081,7 @@ export default function HomePage() {
                 {[
                   {
                     title: "TAX RETURN LIFETIME GUARANTEE",
-                    subtitle: "Your tax return, backed for life™",
+                    subtitle: "Your tax return, backed for life",
                     description: "100% accuracy guaranteed. All backed by the full faith and credit of our guarantee.",
                     icon: "🛡️",
                   },
@@ -1094,7 +1094,7 @@ export default function HomePage() {
                   },
                   {
                     title: "100% ACCURATE GUARANTEE",
-                    subtitle: "Taxes done right",
+                    subtitle: "Your Taxes, Our Priority",
                     description: "Your taxes will be done right, guaranteed, or we'll pay any IRS penalties.",
                     icon: "✅",
                   },

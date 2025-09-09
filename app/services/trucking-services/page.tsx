@@ -26,7 +26,7 @@ export default function TruckingServicesPage() {
         "FMCSA compliance setup",
       ],
       icon: <Truck className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa10.jpg",
     },
     {
       title: "Trucking Permits & Licensing",
@@ -41,7 +41,7 @@ export default function TruckingServicesPage() {
         "Hazmat endorsement assistance",
       ],
       icon: <FileCheck className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa11.jpg",
     },
     {
       title: "Safety & Compliance Services",
@@ -56,7 +56,7 @@ export default function TruckingServicesPage() {
         "Safety audit preparation",
       ],
       icon: <Shield className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa12.jpg",
     },
     {
       title: "Business Formation for Truckers",
@@ -71,7 +71,7 @@ export default function TruckingServicesPage() {
         "Tax structure optimization",
       ],
       icon: <Users className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/visa13.jpg",
     },
   ]
 
@@ -233,7 +233,7 @@ export default function TruckingServicesPage() {
                       className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
                     >
                       <Truck className="h-4 w-4 mr-2" />
-                      Get Quote
+                       Having a question? connect with a speacialist
                     </Button>
                   </div>
                 </div>

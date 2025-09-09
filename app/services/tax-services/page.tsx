@@ -25,7 +25,7 @@ export default function TaxServicesPage() {
         "Electronic filing available",
       ],
       icon: <Users className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/personaltax.jpg",
     },
     {
       title: "Business Tax Return Filing",
@@ -40,7 +40,7 @@ export default function TaxServicesPage() {
         "Multi-state filing support",
       ],
       icon: <TrendingUp className="h-8 w-8" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/businesstax.jpg",
     },
   ]
 
@@ -200,7 +200,7 @@ export default function TaxServicesPage() {
                       className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
                     >
                       <FileText className="h-4 w-4 mr-2" />
-                      Get Quote
+                       Having a question? connect with a speacialist
                     </Button>
                   </div>
                 </div>
