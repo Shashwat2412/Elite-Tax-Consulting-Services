@@ -167,10 +167,16 @@ export default function USCISFormsPage() {
                   Home
                 </Button>
               </Link>
-              <Button className="bg-indigo-600 hover:bg-indigo-700">
-                <Phone className="h-4 w-4 mr-2" />
-                Call Now
-              </Button>
+              <Button
+  onClick={() => {
+    const phoneNumber = "13179993738"; // Same number as WhatsApp
+    window.open(`tel:${phoneNumber}`, "_self");
+  }}
+  className="bg-blue-600 hover:bg-blue-700 transform hover:scale-105 transition-all"
+>
+  <Phone className="h-4 w-4 mr-2" />
+  Call Now
+</Button>
             </div>
           </div>
         </div>
@@ -258,8 +264,8 @@ export default function USCISFormsPage() {
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button
                       onClick={() => {
-                        const phoneNumber = "1234567890" // Replace with actual WhatsApp number
-                        const message = "Hi! I'm interested in your USCIS forms assistance services. Can you help me?"
+                        const phoneNumber = "13179993738" // Replace with actual WhatsApp number
+                        const message = "Hi! I'm interested in your business formation services. Can you help me?"
                         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
                         window.open(whatsappUrl, "_blank")
                       }}
@@ -348,17 +354,20 @@ export default function USCISFormsPage() {
               are completed accurately and submitted on time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 transform hover:scale-105 transition-all">
+              {/* <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 transform hover:scale-105 transition-all">
                 <Phone className="h-5 w-5 mr-2" />
                 Schedule Consultation
-              </Button>
+              </Button> */}
               <Button
                 size="lg"
                 variant="outline"
-                className="border-indigo-600 text-indigo-600 hover:bg-indigo-50 bg-transparent"
+                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
+                onClick={() => {
+                  window.location.href = "/#consultation-form"
+                }}
               >
                 <Mail className="h-5 w-5 mr-2" />
-                Get Free Assessment
+                Having a question? connect with a speacialist
               </Button>
             </div>
           </div>

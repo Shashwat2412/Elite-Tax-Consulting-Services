@@ -45,9 +45,9 @@ export function MobileMenu({ services }: MobileMenuProps) {
             >
               Home
             </Link>
-             <Link href="/blog" className="block py-2 text-navy-800 hover:text-blue-600 transition-colors">
+             {/* <Link href="/blog" className="block py-2 text-navy-800 hover:text-blue-600 transition-colors">
             Blog
-          </Link>
+          </Link> */}
             
             <Collapsible open={servicesOpen} onOpenChange={setServicesOpen}>
               <CollapsibleTrigger className="flex items-center justify-between w-full py-2 text-navy-800 hover:text-blue-600 transition-colors">

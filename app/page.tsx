@@ -57,7 +57,7 @@ import logo from "./logofinal.png"
 import tax from "./tax.jpg"
 import svc2 from "./sv2.jpg"
 import svc21 from "./svc21.jpg"
-import svc4 from "./svcv4.jpeg"
+import svc41 from "./svcv41.jpg"
 import svc6 from "./svc6.jpg"
 import banner from "./bsnner.png"
 import usics from './usics.jpg'
@@ -212,7 +212,7 @@ export default function HomePage() {
       ],
       href: "/services/legal-documents",
       gradient: "from-blue-500 to-blue-600",
-      image: svc4,
+      image: svc41,
     },
     {
       icon: <Building className="h-8 w-8" />,
@@ -366,10 +366,10 @@ export default function HomePage() {
                 Home
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
               </Link>
-             <Link href="/blog" className="text-navy-800 hover:text-blue-600 transition-colors relative group">
+             {/* <Link href="/blog" className="text-navy-800 hover:text-blue-600 transition-colors relative group">
                 Blog
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
-              </Link>
+              </Link> */}
 
               {/* Services Dropdown */}
               <div className="relative group">
@@ -423,10 +423,16 @@ export default function HomePage() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
               </a>
 
-              <Button className="bg-blue-600 hover:bg-blue-700 transform hover:scale-105 transition-all duration-200">
-                <Phone className="h-4 w-4 mr-2" />
-                Call Now
-              </Button>
+              <Button
+  onClick={() => {
+    const phoneNumber = "13179993738"; // Same number as WhatsApp
+    window.open(`tel:${phoneNumber}`, "_self");
+  }}
+  className="bg-blue-600 hover:bg-blue-700 transform hover:scale-105 transition-all"
+>
+  <Phone className="h-4 w-4 mr-2" />
+  Call Now
+</Button>
             </nav>
 
             {/* Mobile Menu */}
@@ -463,6 +469,9 @@ export default function HomePage() {
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button
+                    onClick={() => {
+                        window.location.href = "/#consultation-form"
+                      }}
                       size="lg"
                       className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base md:text-lg font-semibold transform hover:scale-105 transition-all duration-200"
                     >
