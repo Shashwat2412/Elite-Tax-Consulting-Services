@@ -14,35 +14,63 @@ import logo from '../../logofinal.png'
 export default function BusinessServicesPage() {
   const businessServices = [
     {
-      title: "Business Setup Services",
+      title: "Passport Application Assistance",
       description:
-        "Set up your business confidently with our comprehensive services. We specialize in LLC, S-Corp, and C-Corp formations tailored to your needs.",
+        "Hassle-free guidance and support for your passport applications.",
       features: [
-        "LLC formation and registration",
-        "S-Corporation setup",
-        "C-Corporation establishment",
-        "Operating agreement drafting",
-        "EIN number acquisition",
-        "State compliance filing",
-        "Registered agent services",
-        "Business license assistance",
+        "Step-by-step guidance in preparing required documents",
+        "Help with filling out applications correctly.",
+        "Ensure timely submission for new, renewal, or lost passport cases.",
+        "Avoid delays and errors with expert handling.",
+       
       ],
       icon: <Building className="h-8 w-8" />,
-      image: "/visa6.jpg",
+      image: "/oci3.jpg",
     },
     {
-      title: "MC & DOT for Trucking",
+      title: "Power of Attorney (POA) Services",
       description:
-        "Navigate trucking regulations effortlessly with our MC & DOT number application services. We ensure compliance for smooth operations.",
+        "Drafting and attestation services to authorize legal representation abroad.",
       features: [
-        "Motor Carrier (MC) number registration",
-        "DOT number application",
-        "USDOT registration",
-        "Operating authority filing",
-        "Insurance compliance",
-        "Safety compliance assistance",
-        "FMCSA registration",
-        "Trucking permit services",
+        "Drafting, and attestation of POA documents",
+        "Assistance for property management, banking, and personal representation.",
+        "Ensure legal validity and acceptance in India and abroad.",
+      ],
+      icon: <Truck className="h-8 w-8" />,
+      image: "/power.jpg",
+    },
+     {
+      title: "Affidavit Attestation",
+      description:
+        "Professional attestation of affidavits for official and legal purposes.",
+      features: [
+        "Drafting and attestation of affidavits",
+        "Services for identity proof, name change, address confirmation, and more.",
+        "Seamless process ensuring acceptance by embassies and government offices.",
+      ],
+      icon: <Truck className="h-8 w-8" />,
+      image: "/wpermit1.jpg",
+    },
+     {
+      title: "OCI (Overseas Citizenship of India) Services",
+      description:
+        "End-to-end assistance with OCI application and documentation.",
+      features: [
+        "Full assistance with OCI applications for persons of Indian origin with foreign citizenship",
+"Help with documentation, photo requirements, form filling, and follow-ups.",
+        "Ensure smooth processing and avoid common errors.",
+      ],
+      icon: <Truck className="h-8 w-8" />,
+      image: "/wpermit2.jpg",
+    },
+     {
+      title: "Renunciation of Indian Citizenship",
+      description:
+        "Seamless processing for renunciation certificates and compliance requirements.",
+      features: [
+        "Expert guidance for renouncing Indian citizenship when becoming a foreign national.",
+        "Help with completing the renunciation application and attestation.",
+        "Ensure timely submission and approval to avoid rejection or delays",
       ],
       icon: <Truck className="h-8 w-8" />,
       image: "/visa8.jpg",
@@ -154,17 +182,16 @@ export default function BusinessServicesPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-navy-900/10"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-blue-100 text-blue-800 mb-4">Business & Corporate Services</Badge>
+          
             <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
-              <span className="text-blue-600">Business Formation</span> & Corporate Services
+              <span className="text-blue-600">Legal</span> & Documentation Services
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Complete support for LLC, S-Corp, and C-Corp registration and compliance filing. We also specialize in
-              trucking business services including MC & DOT number registration.
+           Comprehensive legal and documentation support to simplify complex procedures with accuracy and efficiency.Trusted legal solutions and seamless documentation, all in one place.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
+          {/* <div className="grid md:grid-cols-4 gap-6 mb-12">
             {benefits.map((benefit, index) => (
               <Card
                 key={index}
@@ -179,12 +206,12 @@ export default function BusinessServicesPage() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Business Types Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Choose Your Business Structure</h2>
@@ -222,7 +249,7 @@ export default function BusinessServicesPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Detail Section */}
       <section className="py-16 bg-gradient-to-r from-blue-50 to-blue-50">
@@ -301,27 +328,26 @@ export default function BusinessServicesPage() {
       <section className="py-16 bg-gradient-to-r from-navy-900 to-blue-800 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Our Business Services?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Our Legal Services?</h2>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Professional business formation and compliance services tailored to your success
-            </p>
+Trusted legal solutions and seamless documentation, all in one place.            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Complete Business Setup",
-                description: "From entity formation to EIN numbers, we handle every aspect of your business setup.",
+                title: "Passport Application Assistance",
+                description: "Hassle-free guidance and support for your passport applications",
                 icon: <Building className="h-8 w-8" />,
               },
               {
-                title: "Trucking Expertise",
-                description: "Specialized knowledge in trucking industry regulations and DOT/MC number requirements.",
-                icon: <Truck className="h-8 w-8" />,
+                title: "Power of Attorney",
+                description: "Drafting and attestation services to authorize legal representation abroad",
+                icon: <FileCheck className="h-8 w-8" />,
               },
               {
-                title: "Ongoing Compliance",
-                description: "We ensure your business stays compliant with all state and federal requirements.",
+                title: "Affidavit Attestation",
+                description: "Professional attestation of affidavits for official and legal purposes.",
                 icon: <FileCheck className="h-8 w-8" />,
               },
             ].map((item, index) => (
@@ -361,7 +387,7 @@ export default function BusinessServicesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
+                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}

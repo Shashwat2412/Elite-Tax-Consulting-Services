@@ -30,23 +30,7 @@ export default function BusinessServicesPage() {
       icon: <Building className="h-8 w-8" />,
       image: "/visa6.jpg",
     },
-    {
-      title: "MC & DOT for Trucking",
-      description:
-        "Navigate trucking regulations effortlessly with our MC & DOT number application services. We ensure compliance for smooth operations.",
-      features: [
-        "Motor Carrier (MC) number registration",
-        "DOT number application",
-        "USDOT registration",
-        "Operating authority filing",
-        "Insurance compliance",
-        "Safety compliance assistance",
-        "FMCSA registration",
-        "Trucking permit services",
-      ],
-      icon: <Truck className="h-8 w-8" />,
-      image: "/visa8.jpg",
-    },
+   
   ]
 
   const businessTypes = [
@@ -158,7 +142,7 @@ export default function BusinessServicesPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-navy-900/10"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-blue-100 text-blue-800 mb-4">Business & Corporate Services</Badge>
+            {/* <Badge className="bg-blue-100 text-blue-800 mb-4">Business & Corporate Services</Badge> */}
             <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
               <span className="text-blue-600">Business Formation</span> & Corporate Services
             </h1>
@@ -168,7 +152,7 @@ export default function BusinessServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
+          {/* <div className="grid md:grid-cols-4 gap-6 mb-12">
             {benefits.map((benefit, index) => (
               <Card
                 key={index}
@@ -183,12 +167,12 @@ export default function BusinessServicesPage() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Business Types Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Choose Your Business Structure</h2>
@@ -226,7 +210,7 @@ export default function BusinessServicesPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Detail Section */}
       <section className="py-16 bg-gradient-to-r from-blue-50 to-blue-50">
@@ -365,7 +349,7 @@ export default function BusinessServicesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
+                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}

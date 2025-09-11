@@ -40,17 +40,17 @@ export default function ImmigrationVisaPage() {
       title: "Work Permit Applications",
       description: "Secure employment authorization with our expert help.",
       features: [
-        "(a)(5)    Asylee",
-        "(a)(10)   Withholding of deportation or removal granted  ",
-        "(c)(8)    Asylum application pending",
-        "(c)(9)    Pending adjustment of status  ",
-        "(c)(31)   VAWA self-petitioners with an approved Form I-360 ",
-        "(c)(3)(C) F-1 student",
-        "(a)(19)   U-1 nonimmigrant",
+        "A 5 Asylee",
+        "A 10 Withholding of deportation or removal granted  ",
+        "C 8 Asylum application pending",
+        "C 9 Pending adjustment of status  ",
+        "C 31 VAWA self-petitioners with an approved Form I-360 ",
+        "C 3 C F-1 student",
+        "A 19 U-1 nonimmigrant",
         "Form I-765 – Application for Employment Authorization (EAD)",
       ],
       icon: <Users className="h-8 w-8" />,
-      image: "/visa3.jpg",
+      image: "/wpermit1.jpg",
     },
     {
       title: "OCI (Overseas Citizenship of India)",
@@ -66,7 +66,7 @@ export default function ImmigrationVisaPage() {
         "Parents Autorization form for kids passport to be issued in India",
       ],
       icon: <Heart className="h-8 w-8" />,
-      image: "/visa4.jpg",
+      image: "/oci1.jpg",
     },
   ]
 
@@ -140,7 +140,7 @@ export default function ImmigrationVisaPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-blue-900/10"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-blue-100 text-blue-800 mb-4">Immigration & Visa Services</Badge>
+            {/* <Badge className="bg-blue-100 text-blue-800 mb-4">Immigration & Visa Services</Badge> */}
             <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
               <span className="text-blue-600">Immigration & Visa</span> Solutions
             </h1>
@@ -150,7 +150,7 @@ export default function ImmigrationVisaPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
+          {/* <div className="grid md:grid-cols-4 gap-6 mb-12">
             {[
               { icon: <Globe className="h-6 w-6" />, title: "8+ Countries", desc: "Visa services worldwide" },
               { icon: <Clock className="h-6 w-6" />, title: "Fast Processing", desc: "Quick turnaround times" },
@@ -170,7 +170,7 @@ export default function ImmigrationVisaPage() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -297,11 +297,11 @@ export default function ImmigrationVisaPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-navy-900 to-blue-800 text-white">
+      <section className="py-16 py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Immigration Journey?</h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               Let our immigration experts guide you through every step of the process. From visa applications to
               permanent residency, we're here to help.
             </p>
@@ -313,7 +313,7 @@ export default function ImmigrationVisaPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
+                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}

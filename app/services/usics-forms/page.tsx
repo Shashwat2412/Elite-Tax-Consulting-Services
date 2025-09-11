@@ -187,7 +187,7 @@ export default function USCISFormsPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/10 to-navy-900/10"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-indigo-100 text-indigo-800 mb-4">USCIS & Immigration Forms</Badge>
+            {/* <Badge className="bg-indigo-100 text-indigo-800 mb-4">USCIS & Immigration Forms</Badge> */}
             <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
               <span className="text-indigo-600">USCIS Forms</span> & Immigration Documentation
             </h1>
@@ -198,7 +198,7 @@ export default function USCISFormsPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
+          {/* <div className="grid md:grid-cols-4 gap-6 mb-12">
             {benefits.map((benefit, index) => (
               <Card
                 key={index}
@@ -213,7 +213,7 @@ export default function USCISFormsPage() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -361,7 +361,7 @@ export default function USCISFormsPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
+                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}

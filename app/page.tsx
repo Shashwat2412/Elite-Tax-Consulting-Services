@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import {
@@ -27,6 +27,7 @@ import {
   Loader2,
   Truck,
   Scale,
+  X,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -47,7 +48,7 @@ import {
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
-
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog" // Add Dialog components
 import { ChatBot } from "./components/chat-bot"
 import { WhatsAppWidget } from "./components/whatsapp-widget"
 import { MobileMenu } from "./components/mobile-menu"
@@ -67,6 +68,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 export default function HomePage() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
+  const [isModalOpen, setIsModalOpen] = useState(true) // New state for modal
   const { reviewsData, loading: reviewsLoading, error: reviewsError } = useReviews()
   const [formData, setFormData] = useState({
     firstName: "",
@@ -81,6 +83,12 @@ export default function HomePage() {
     hearAbout: "",
     message: "",
   })
+
+useEffect(() => {
+    // Optional: Auto-close modal after a certain time (e.g., 30 seconds)
+    // const timer = setTimeout(() => setIsModalOpen(false), 30000)
+    // return () => clearTimeout(timer)
+  }, [])
 
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -129,6 +137,12 @@ export default function HomePage() {
   const handleGoogleReview = () => {
     const googleReviewUrl = "https://g.page/r/CfS4mtz8vBL8EBI/review"
     window.open(googleReviewUrl, "_blank")
+  }
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "13179993738"
+    const message = "Hi! I'm interested in your tax and immigration services. Can you help me?"
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, "_blank")
   }
 
   const convertTo24Hour = (time12h: string) => {
@@ -303,6 +317,43 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
+
+<Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+        <DialogContent className="sm:max-w-md bg-white rounded-lg shadow-2xl border-0 p-6">
+          <DialogHeader>
+            <DialogTitle className="text-xl md:text-2xl font-bold text-navy-900 text-center">
+              Get Expert Help in 30 Mins
+            </DialogTitle>
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+              aria-label="Close modal"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </DialogHeader>
+          <div className="text-center space-y-4">
+            <p className="text-sm md:text-base text-gray-600">
+              Connect with our experts instantly via WhatsApp for personalized tax and immigration assistance.
+            </p>
+            <Button
+              onClick={handleWhatsAppClick}
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-sm md:text-base font-semibold flex items-center justify-center mx-auto transform hover:scale-105 transition-all duration-200"
+            >
+              <svg
+                className="h-5 w-5 mr-2"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.559 4.135 1.537 5.88L0 24l6.305-1.653a11.95 11.95 0 005.695 1.446c6.627 0 12-5.373 12-12S18.627 0 12 0zm6.503 16.427c-.294.832-.973 1.52-1.854 1.737-.788.194-1.81.367-2.946-.404-1.25-.847-2.305-1.835-3.292-2.976-.987-1.14-1.854-2.378-2.146-3.79-.294-1.412.147-2.305.876-3.097.176-.194.412-.294.647-.294h.441c.235 0 .47.118.647.529.176.412.588.988.824 1.4.235.412.294.647.059.882-.235.235-.353.412-.588.647-.235.235-.412.529-.176.764.882 1.058 1.94 1.94 3.232 2.523.294.147.588.235.882.118.294-.118 1.058-.529 1.763-.823.706-.294 1.293-.176 1.528.118.235.294 1.058.706 1.234 1.058.176.353.176.647-.118 1.058z" />
+              </svg>
+              Message Us on WhatsApp
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
       <header className="bg-white shadow-sm border-b border-blue-100 sticky top-0 z-50">
         <div className="bg-navy-900 text-white py-2 hidden md:block">
           <div className="container mx-auto px-4">
@@ -1407,6 +1458,12 @@ export default function HomePage() {
                       <div className="mt-3">
                         <Button
                           variant="outline"
+                           onClick={() =>
+    window.open(
+      "https://www.google.com/maps/dir//180+US-31+Whiteland,+IN+46184/@39.5523292,-86.0884002,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x886b687bd41ff693:0x5106f881bed5d97e",
+      "_blank"
+    )
+  }
                           className="border-purple-600 text-purple-600 hover:bg-purple-50 bg-transparent text-xs md:text-sm"
                         >
                           Get Directions

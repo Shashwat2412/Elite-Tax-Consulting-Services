@@ -73,6 +73,18 @@ export default function TruckingServicesPage() {
       icon: <Users className="h-8 w-8" />,
       image: "/visa13.jpg",
     },
+     {
+      title: "Elite Truckers : English Learning for Truck Drivers",
+      description:
+        "Why English Training is important",
+      features: [
+        "Helps truckers communicate confidently in daily life and work-related situations",
+        "Essential for understanding DOT inspections, police interactions, and road safety signs",
+        "Improves job opportunities, income, and career growth in the U.S. trucking industry.",
+      ],
+      icon: <Users className="h-8 w-8" />,
+      image: "/english.webp",
+    },
   ]
 
   const benefits = [
@@ -156,7 +168,7 @@ export default function TruckingServicesPage() {
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 mb-12">
-            {benefits.map((benefit, index) => (
+            {/* {benefits.map((benefit, index) => (
               <Card
                 key={index}
                 className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm group"
@@ -169,7 +181,7 @@ export default function TruckingServicesPage() {
                   <p className="text-sm text-gray-600">{benefit.description}</p>
                 </CardContent>
               </Card>
-            ))}
+            ))} */}
           </div>
         </div>
       </section>
@@ -318,7 +330,7 @@ export default function TruckingServicesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
+                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}

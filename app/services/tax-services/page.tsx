@@ -114,7 +114,7 @@ export default function TaxServicesPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-navy-900/10"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-blue-100 text-blue-800 mb-4">Tax Services</Badge>
+            {/* <Badge className="bg-blue-100 text-blue-800 mb-4">Tax Services</Badge> */}
             <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
               Professional <span className="text-blue-600">Tax Services</span>
             </h1>
@@ -124,7 +124,7 @@ export default function TaxServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
+          {/* <div className="grid md:grid-cols-4 gap-6 mb-12">
             {benefits.map((benefit, index) => (
               <Card
                 key={index}
@@ -139,7 +139,7 @@ export default function TaxServicesPage() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -283,7 +283,7 @@ export default function TaxServicesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
+                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}
