@@ -38,11 +38,12 @@ export function ChatBot() {
   const serviceOptions = [
     { key: "personal-tax", label: "🧾 Personal Tax Services", emoji: "🧾" },
     { key: "business-tax", label: "🏢 Business Tax Services", emoji: "🏢" },
-    { key: "immigration-visa", label: "🌎 Immigration & Visa Services", emoji: "🌎" },
-    { key: "uscis-forms", label: "📄 USCIS & Immigration Forms", emoji: "📄" },
+    { key: "immigration-visa", label: "🌎 Indian Embassy & Visa Services", emoji: "🌎" },
+    { key: "uscis-forms", label: "📄 USCIS & Immigration Assistance", emoji: "📄" },
     { key: "legal-documents", label: "📋 Legal & Documentation Services", emoji: "📋" },
     { key: "business-services", label: "🏗️ Business & Corporate Services", emoji: "🏗️" },
     { key: "trucking-services", label: "🚚 Trucking Compliance & Setup", emoji: "🚚" },
+      { key: "english", label: "🚚 Elite Trucker English learn", emoji: "🚚" },
     { key: "other", label: "❓ Something Else / Not Sure", emoji: "❓" },
   ]
 

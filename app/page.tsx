@@ -68,7 +68,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 export default function HomePage() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
-  const [isModalOpen, setIsModalOpen] = useState(true) // New state for modal
+  const [isModalOpen, setIsModalOpen] = useState(false) // New state for modal
   const { reviewsData, loading: reviewsLoading, error: reviewsError } = useReviews()
   const [formData, setFormData] = useState({
     firstName: "",
@@ -88,6 +88,12 @@ useEffect(() => {
     // Optional: Auto-close modal after a certain time (e.g., 30 seconds)
     // const timer = setTimeout(() => setIsModalOpen(false), 30000)
     // return () => clearTimeout(timer)
+
+
+    const timer = setTimeout(() => {
+      setIsModalOpen(true)
+    }, 3000) // 3-second delay
+    return () => clearTimeout(timer) // Cleanup on unmount
   }, [])
 
   const handleFormSubmit = async (e: React.FormEvent) => {
@@ -182,15 +188,14 @@ useEffect(() => {
     },
     {
       icon: <Globe className="h-8 w-8" />,
-      title: "Immigration & Visa Services",
+      title: "Indian Embassy & Visa Services",
       description: "Comprehensive Immigration Solutions Worldwide",
       items: [
-        "Visa Applications (8+ Countries)",
+        "Visa Applications ",
         "Green Card Applications", 
         "Work Permit Applications",
-        "Travel Document Assistance",
+      
         "Immigration Case Expedite",
-        "Family Petitions",
       ],
       href: "/services/immigration-visa",
       gradient: "from-blue-500 to-blue-600",
@@ -198,14 +203,14 @@ useEffect(() => {
     },
     {
       icon: <Scale className="h-8 w-8" />,
-      title: "USCIS & Immigration Forms",
+      title: "USCIS & Immigration Assistance",
       description: "Expert Assistance with All USCIS Forms",
       items: [
-        "Form I-485 (Adjustment of Status)",
-        "Form I-130 (Petition for Relative)",
-        "Form I-765 (Work Permit)",
-        "Form I-131 (Travel Document)",
-        "Form N-400 (Citizenship)",
+        " (Adjustment of Status)",
+        "(Petition for Relative)",
+        " (Work Permit)",
+        " (Travel Document)",
+        " (Citizenship)",
         "Form DS-160/DS-260",
       ],
       href: "/services/usics-forms",
@@ -329,7 +334,7 @@ useEffect(() => {
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
               aria-label="Close modal"
             >
-              <X className="h-5 w-5" />
+              {/* <X className="h-5 w-5" /> */}
             </button>
           </DialogHeader>
           <div className="text-center space-y-4">
@@ -516,6 +521,8 @@ useEffect(() => {
                     <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-blue-100 leading-relaxed">
                       Maximize your tax savings by up to 50% with Elite Tax Consulting Services
                     </p>
+                                        <p className="font-bold text-3xl mt-5">Through out the all states in USA</p>  
+
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -641,11 +648,12 @@ useEffect(() => {
                       <SelectContent>
                         <SelectItem value="tax-services">Personal Tax Services</SelectItem>
                         <SelectItem value="business-tax">Business Tax Services</SelectItem>
-                        <SelectItem value="immigration-visa">Immigration & Visa Services</SelectItem>
-                        <SelectItem value="uscis-forms">USCIS & Immigration Forms</SelectItem>
+                        <SelectItem value="immigration-visa">Indian Embassy & Visa Services</SelectItem>
+                        <SelectItem value="uscis-forms">USCIS & Immigration Assistance</SelectItem>
                         <SelectItem value="legal-documents">Legal & Documentation Services</SelectItem>
                         <SelectItem value="business-services">Business & Corporate Services</SelectItem>
                         <SelectItem value="trucking-services">Trucking Compliance & Setup</SelectItem>
+                               <SelectItem value="english">Elite Trucker English Learn</SelectItem>
                         <SelectItem value="other">Other / Not Sure</SelectItem>
                       </SelectContent>
                     </Select>
@@ -901,15 +909,16 @@ useEffect(() => {
 
                         <SelectItem value="business-tax">Business Tax Services</SelectItem>
 
-                        <SelectItem value="immigration-visa">Immigration & Visa Services</SelectItem>
+                        <SelectItem value="immigration-visa">Indian Embassy & Visa Services</SelectItem>
 
-                        <SelectItem value="uscis-forms">USCIS & Immigration Forms</SelectItem>
+                        <SelectItem value="uscis-forms">USCIS & Immigration Assistance</SelectItem>
 
                         <SelectItem value="legal-documents">Legal & Documentation Services</SelectItem>
 
                         <SelectItem value="business-services">Business & Corporate Services</SelectItem>
 
                         <SelectItem value="trucking-services">Trucking Compliance & Setup</SelectItem>
+                               <SelectItem value="english">Elite Trucker English Learn</SelectItem>
 
                         <SelectItem value="other">Other / Not Sure</SelectItem>
 
@@ -1129,11 +1138,11 @@ useEffect(() => {
       </section>
 
 
-         <div className="bg-white p-4 mx-8 md:p-6 lg:p-8 rounded-lg shadow-lg order-1 lg:order-2 lg:my-16 xl:my-24">
+         <div className=" bg-gradient-to-r from-navy-900 to-blue-800 text-white p-4 mx-8 md:p-6 lg:p-8 rounded-lg shadow-lg order-1 lg:order-2 lg:my-16 xl:my-24">
               <div className="text-center mb-6 md:mb-8">
-                <h3 className="text-xl md:text-2xl font-bold text-navy-900 mb-4">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
                   Get your taxes done right and your biggest tax refund—
-                  <span className="text-blue-600">guaranteed</span>
+                  <span className="text-white">guaranteed</span>
                 </h3>
               </div>
 
@@ -1166,15 +1175,17 @@ useEffect(() => {
                       </div>
                       <div className="absolute inset-0 w-20 h-20 mx-auto rounded-full border-2 border-dashed border-yellow-600 animate-spin-slow"></div>
                     </div>
-                    <h4 className="font-bold text-navy-900 text-sm mb-2 leading-tight">{guarantee.title}</h4>
-                    <p className="font-semibold text-blue-600 text-sm mb-2">{guarantee.subtitle}</p>
-                    <p className="text-gray-600 text-xs leading-relaxed">{guarantee.description}</p>
+                    <h4 className="font-bold text-white text-sm mb-2 leading-tight">{guarantee.title}</h4>
+                    <p className="font-semibold text-white text-sm mb-2">{guarantee.subtitle}</p>
+                    <p className="text-white text-xs leading-relaxed">{guarantee.description}</p>
                   </div>
                 ))}
               </div>
 
               <div className="text-center">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 text-sm font-semibold transform hover:scale-105 transition-all duration-200">
+                <Button   onClick={() => {
+                        window.location.href = "/#consultation-form"
+                      }} className="bg-orange-600 hover:bg-blue-700 text-white px-6 py-2 text-sm font-semibold transform hover:scale-105 transition-all duration-200">
                   Get Your Guaranteed Refund
                 </Button>
               </div>
@@ -1231,16 +1242,16 @@ useEffect(() => {
       </section>
 
       {/* Reviews Section - Mobile responsive */}
-      <section id="reviews" className="py-8 md:py-16 bg-gradient-to-r from-blue-50 to-navy-50">
+      <section id="reviews" className="py-8 md:py-16  bg-gradient-to-r from-navy-900 to-blue-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-navy-900 mb-4">What Our Clients Say</h2>
-            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-6 md:mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">What Our Clients Say</h2>
+            <p className="text-base md:text-lg text-white max-w-2xl mx-auto mb-6 md:mb-8">
               Real reviews from our satisfied clients on Google
             </p>
             <Button
               onClick={handleGoogleReview}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 md:px-8 py-2 md:py-3 text-sm md:text-lg font-semibold transform hover:scale-105 transition-all duration-200"
+              className="bg-orange-600 hover:bg-blue-700 text-white px-4 md:px-8 py-2 md:py-3 text-sm md:text-lg font-semibold transform hover:scale-105 transition-all duration-200"
             >
               <Star className="h-4 md:h-5 w-4 md:w-5 mr-2" />
               Review Us on Google

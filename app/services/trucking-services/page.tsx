@@ -154,14 +154,14 @@ export default function TruckingServicesPage() {
 
       {/* Hero Section */}
       <section className="py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-navy-900/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 to-blue-800 text-white"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-blue-100 text-blue-800 mb-4">Trucking Compliance & Setup</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
-              <span className="text-blue-600">Trucking Compliance</span> & Business Setup
+            {/* <Badge className="bg-blue-100 text-blue-800 mb-4">Trucking Compliance & Setup</Badge> */}
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <span className="text-white">Trucking Compliance</span> & Business Setup
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
               Complete trucking business setup and compliance services. From MC & DOT numbers to safety compliance,
               we handle all aspects of getting your trucking operation road-ready and legally compliant.
             </p>
@@ -330,7 +330,7 @@ export default function TruckingServicesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
+                className="border-orange-500 text-orange-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}

@@ -13,13 +13,16 @@ import logo from '../../logofinal.png'
 
 export default function ImmigrationVisaPage() {
   const immigrationServices = [
-    {
-      title: "Visa Applications",
-      description:
-        "We assist with visa applications for Canada, USA, India, Australia, Nepal, Germany, Italy, and Spain.",
-      countries: ["Canada", "USA", "India", "Australia", "Nepal", "Germany", "Italy", "Spain"],
-      icon: <Globe className="h-8 w-8" />,
-      image: "/visa2.jpg",
+     {
+      title: "Visa & Travel Services",
+      description: "End-to-end guidance to help you become a lawful permanent resident of the United States.",
+      features: [
+        "Tourist, business, employment, student, and medical visas",
+        "e-Visa support (Tourist, Medical, Business, Conference)",
+        "Emergency visa for urgent travel to India",
+      ],
+      icon: <FileCheck className="h-8 w-8" />,
+      image: "/ve1.jpg",
     },
     {
       title: "Green Card Applications",
@@ -34,7 +37,7 @@ export default function ImmigrationVisaPage() {
         "US tourist visa from any country with appointment support at very reasonable cost",
       ],
       icon: <FileCheck className="h-8 w-8" />,
-      image: "/greencardvisa.jpg",
+      image: "/gr.jpg",
     },
     {
       title: "Work Permit Applications",
@@ -56,18 +59,47 @@ export default function ImmigrationVisaPage() {
       title: "OCI (Overseas Citizenship of India)",
       description: "We handle OCI card applications efficiently for those of Indian origin.",
       features: [
-        "OCI application preparation",
-        "10 year regular India visa",
-        "Appointment scheduling",
-        "Renunciation",
-        "India e visa",
-        "Emergency Slip",
-        "Power of Attorney ",
-        "Parents Autorization form for kids passport to be issued in India",
+        "New OCI application",
+        "OCI renewal (passport renewal, lost/damaged)",
+        "Renunciation of Indian citizenship (mandatory before OCI if naturalized abroad)",
+        "Miscellaneous OCI services (address/name updates)",
       ],
       icon: <Heart className="h-8 w-8" />,
       image: "/oci1.jpg",
     },
+     {
+      title: "Consular & Attestation Services",
+      description: "",
+      features: [
+        "Attestation of documents (birth, marriage, education, commercial, etc.)",
+        "Power of Attorney attestation",
+        "Affidavits/Declarations",
+        "NRI certificate (Non-Resident Indian status)",
+        "Parents’ authorization for child’s passport issuance in India"
+      ],
+      icon: <Heart className="h-8 w-8" />,
+      image: "/oci1.jpg",
+    },
+     {
+      title: "DS-160 - Nonimmigrant Visa Application",
+      description: "",
+      features: [
+        "Temporary U.S. Visa For Tourist, business",
+        "US Tourist visa from any country with appointment support at very reasonable cost",
+      ],
+      icon: <Heart className="h-8 w-8" />,
+      image: "/visa1.jpg",
+    },
+     {
+      title: "Emergency",
+      description: "",
+      features: [
+        "Emergency Certificate (travel document to return to India)",
+      ],
+      icon: <Heart className="h-8 w-8" />,
+      image: "/visa1.jpg",
+    },
+    
   ]
 
   const additionalServices = [
@@ -137,15 +169,15 @@ export default function ImmigrationVisaPage() {
 
       {/* Hero Section */}
       <section className="py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-blue-900/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 to-blue-800 text-white"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
             {/* <Badge className="bg-blue-100 text-blue-800 mb-4">Immigration & Visa Services</Badge> */}
-            <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
-              <span className="text-blue-600">Immigration & Visa</span> Solutions
+            <h1 className="text-4xl md:text-5xl font-bod text-navy-900 mb-6">
+              <span className="text-white font-bold"> Indian Embassy & Visa Services</span> 
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From Canada to Australia, navigate visa applications effortlessly with our comprehensive services. We
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
+            Navigate visa applications effortlessly with our comprehensive services. We
               specialize in visas for multiple countries and provide end-to-end immigration support.
             </p>
           </div>
@@ -203,7 +235,7 @@ export default function ImmigrationVisaPage() {
                     <h2 className="text-3xl font-bold text-navy-900 mb-4">{service.title}</h2>
                     <p className="text-lg text-gray-600 leading-relaxed">{service.description}</p>
                   </div>
-
+{/* 
                   {service.countries && (
                     <div className="space-y-3">
                       <h3 className="text-xl font-semibold text-navy-900">Countries We Serve:</h3>
@@ -216,7 +248,7 @@ export default function ImmigrationVisaPage() {
                         ))}
                       </div>
                     </div>
-                  )}
+                  )} */}
 
                   {service.features && (
                     <div className="space-y-3">
@@ -313,7 +345,7 @@ export default function ImmigrationVisaPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
+                className="border-orange-500 text-orange-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}

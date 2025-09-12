@@ -18,9 +18,8 @@ export default function USCISFormsPage() {
       description:
         "Complete assistance with family-based immigration forms to reunite with your loved ones in the United States.",
       features: [
-        "Form I-130 – Petition for Alien Relative",
-        "Form I-864 – Affidavit of Support",
-        "Form I-730 – Refugee/Asylee Relative Petition",
+        " Petition for Alien Relative",
+        " Affidavit of Support",
       ],
       icon: <Heart className="h-8 w-8" />,
       image: "/fam.jpg",
@@ -30,7 +29,7 @@ export default function USCISFormsPage() {
       description:
         "Professional guidance for employment-based immigration forms and work authorization applications.",
       features: [
-        "Form I-140 – Immigrant Petition for Alien Worker",
+        " Immigrant Petition for Alien Worker",
         // "Form I-485 (Adjustment of Status)",
         // "Form I-765 (Employment Authorization)",
         // "Form I-94 (Arrival/Departure Record)",
@@ -75,8 +74,8 @@ export default function USCISFormsPage() {
       description:
         "Provides immigration relief for vulnerable individuals, humanitarian cases, and special immigrants.",
       features: [
-        "Form I-360 – Amerasian, Widow(er), or Special Immigrant (including VAWA)",
-        "Form I-589 – Application for Asylum & Withholding of Removal",
+        " Amerasian, Widow(er), or Special Immigrant (including VAWA)",
+        "Application for Asylum & Withholding of Removal",
       ],
       icon: <Award className="h-8 w-8" />,
       image: "/visa14.jpg",
@@ -86,7 +85,7 @@ export default function USCISFormsPage() {
       description:
         "Allows eligible applicants to adjust their immigration status to lawful permanent residency.",
       features: [
-        "Form I-485 – Application to Register Permanent Residence or Adjust Status",
+        " Application to Register Permanent Residence or Adjust Status",
       ],
       icon: <Award className="h-8 w-8" />,
       image: "/visa19.jpg",
@@ -96,8 +95,8 @@ export default function USCISFormsPage() {
       description:
         "Grants authorization for international travel, reentry, or lawful entry into the United States.",
       features: [
-        "Form I-131 – Application for Travel Document / Advance Parole / Humanitarian Parole",
-        "Form I-94 – Arrival/Departure Record",
+        " Application for Travel Document / Advance Parole / Humanitarian Parole",
+        "Arrival/Departure Record",
       ],
       icon: <Award className="h-8 w-8" />,
       image: "/visa18.jpg",
@@ -107,7 +106,20 @@ export default function USCISFormsPage() {
       description:
         "Essential records verifying health, eligibility, vaccinations, and compliance with immigration requirements.",
       features: [
-        "Form I-693 – Report of Medical Examination and Vaccination Record",
+        " Report of Medical Examination and Vaccination Record",
+      ],
+      icon: <Award className="h-8 w-8" />,
+      image: "/visa17.jpg",
+    },
+     {
+      title: "Citizenship",
+      description:"",
+      features: [
+        "Application Purpose",
+        "Eligibility Criteria",
+        "Estimated Processing Timeline",
+        "Citizenship Interview",
+        "Naturalization Process Steps"
       ],
       icon: <Award className="h-8 w-8" />,
       image: "/visa17.jpg",
@@ -184,14 +196,14 @@ export default function USCISFormsPage() {
 
       {/* Hero Section */}
       <section className="py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/10 to-navy-900/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 to-blue-800 text-white"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
             {/* <Badge className="bg-indigo-100 text-indigo-800 mb-4">USCIS & Immigration Forms</Badge> */}
-            <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
-              <span className="text-indigo-600">USCIS Forms</span> & Immigration Documentation
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <span className="text-white font-bold">USCIS </span> & Immigration Assistance
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
               Expert assistance with all USCIS forms and immigration documentation. From family petitions to
               citizenship applications, we ensure accurate completion and timely submission of your critical
               immigration paperwork.
@@ -361,7 +373,7 @@ export default function USCISFormsPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
+                className="border-orange-500 text-orange-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}

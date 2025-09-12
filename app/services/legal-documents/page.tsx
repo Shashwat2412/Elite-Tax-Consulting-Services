@@ -49,7 +49,7 @@ export default function BusinessServicesPage() {
         "Seamless process ensuring acceptance by embassies and government offices.",
       ],
       icon: <Truck className="h-8 w-8" />,
-      image: "/wpermit1.jpg",
+      image: "/aff1.jpg",
     },
      {
       title: "OCI (Overseas Citizenship of India) Services",
@@ -61,7 +61,7 @@ export default function BusinessServicesPage() {
         "Ensure smooth processing and avoid common errors.",
       ],
       icon: <Truck className="h-8 w-8" />,
-      image: "/wpermit2.jpg",
+      image: "/jii.jpg",
     },
      {
       title: "Renunciation of Indian Citizenship",
@@ -73,7 +73,7 @@ export default function BusinessServicesPage() {
         "Ensure timely submission and approval to avoid rejection or delays",
       ],
       icon: <Truck className="h-8 w-8" />,
-      image: "/visa8.jpg",
+      image: "/rec.jpg",
     },
   ]
 
@@ -179,14 +179,14 @@ export default function BusinessServicesPage() {
 
       {/* Hero Section */}
       <section className="py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-navy-900/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 to-blue-800 text-white"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12 animate-fade-in">
           
-            <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
-              <span className="text-blue-600">Legal</span> & Documentation Services
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <span className="text-white">Legal</span> & Documentation Services
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
            Comprehensive legal and documentation support to simplify complex procedures with accuracy and efficiency.Trusted legal solutions and seamless documentation, all in one place.
             </p>
           </div>
@@ -387,7 +387,7 @@ Trusted legal solutions and seamless documentation, all in one place.           
               <Button
                 size="lg"
                 variant="outline"
-                className="border-purple-700 text-purple-600 hover:bg-blue-50 bg-transparent font-bold"
+                className="border-orange-500 text-orange-600 hover:bg-blue-50 bg-transparent font-bold"
                 onClick={() => {
                   window.location.href = "/#consultation-form"
                 }}
