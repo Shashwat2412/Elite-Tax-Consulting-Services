@@ -122,7 +122,7 @@ export default function USCISFormsPage() {
         "Naturalization Process Steps"
       ],
       icon: <Award className="h-8 w-8" />,
-      image: "/visa17.jpg",
+      image: "/cz.jpeg",
     },
   ]
 

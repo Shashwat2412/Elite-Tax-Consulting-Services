@@ -14,21 +14,48 @@ import logo from '../../logofinal.png'
 export default function BusinessServicesPage() {
   const businessServices = [
     {
-      title: "Business Setup Services",
+      title: "LLC (Limited Liability Company) Formation Services",
       description:
-        "Set up your business confidently with our comprehensive services. We specialize in LLC, S-Corp, and C-Corp formations tailored to your needs.",
+        "",
       features: [
-        "LLC formation and registration",
-        "S-Corporation setup",
-        "C-Corporation establishment",
-        "Operating agreement drafting",
-        "EIN number acquisition",
-        "State compliance filing",
-        "Registered agent services",
-        "Business license assistance",
+        "Complete LLC Setup: We assist in forming your LLC, handling registrations, licenses, and documentation.",
+        "State Compliance: Ensure your LLC meets state-specific requirements and stays in good standingp",
+        "Operating Agreement Drafting: Help create agreements that outline management and profit distribution",
+        "Tax Identification: Support in obtaining EIN and setting up accounts for tax reporting.",
+        "Ongoing Support: Provide accounting, tax planning, and compliance services for continued success."
       ],
       icon: <Building className="h-8 w-8" />,
-      image: "/visa6.jpg",
+      image: "/llc1.jpg",
+    },
+
+      {
+      title: "S Corporation Formation Services",
+      description:
+        "",
+      features: [
+        "S Corp Election: We guide you through IRS filings to elect S Corp status for tax advantages.",
+        "Payroll Setup: Help establish proper salary structures and tax withholdings",
+        "Tax Planning: Advise on how to manage distributions and salaries to minimize tax liabilities.",
+        "Compliance Guidance: Assist with state filings, annual reports, and legal requirements.",
+        "Financial Management: Offer bookkeeping and tax preparation services to ensure smooth operations."
+      ],
+      icon: <Building className="h-8 w-8" />,
+      image: "/llc2.jpg",
+    },
+
+      {
+      title: "C Corporation Formation Services",
+      description:
+        "",
+      features: [
+        "Incorporation Process: We handle the full setup, including registration and required filings",
+        "Share Structuring: Assist in creating share classes and ownership frameworks for growth.",
+        "Tax Strategy: Help you plan for corporate taxes and retained earnings efficiently.",
+        "Legal Compliance: Ensure bylaws, corporate minutes, and filings are completed correctly.",
+        "Employee Benefits Setup: Support in establishing retirement plans, stock options, and other perks to attract talent."
+      ],
+      icon: <Building className="h-8 w-8" />,
+      image: "/llc3.jpg",
     },
    
   ]
@@ -147,7 +174,7 @@ export default function BusinessServicesPage() {
               <span className="text-white">Business Formation</span> & Corporate Services
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-              Complete support for LLC, S-Corp, and C-Corp registration and compliance filing. We also specialize in
+              Complete support for Limited Liability Company, S Corporation, and C Corporation registration and compliance filing. We also specialize in
               trucking business services including MC & DOT number registration.
             </p>
           </div>

@@ -78,7 +78,7 @@ export default function ImmigrationVisaPage() {
         "Parents’ authorization for child’s passport issuance in India"
       ],
       icon: <Heart className="h-8 w-8" />,
-      image: "/oci1.jpg",
+      image: "/ca.jpg",
     },
      {
       title: "DS-160 - Nonimmigrant Visa Application",
@@ -97,7 +97,7 @@ export default function ImmigrationVisaPage() {
         "Emergency Certificate (travel document to return to India)",
       ],
       icon: <Heart className="h-8 w-8" />,
-      image: "/visa1.jpg",
+      image: "/em.jpeg",
     },
     
   ]
