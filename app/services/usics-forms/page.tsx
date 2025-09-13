@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowLeft, Scale, FileText, Users, CheckCircle, Clock, Shield, Award, Phone, Mail, MessageCircle, Globe, Heart } from 'lucide-react'
+import { ArrowLeft, Scale, FileText, Users, CheckCircle, Clock, Shield, Award, Phone, Mail, MessageCircle, Globe, Heart, FileCheck } from 'lucide-react'
 import { ChatBot } from "../../components/chat-bot"
 import { WhatsAppWidget } from "../../components/whatsapp-widget"
 import logo from '../../logofinal.png'
@@ -38,6 +38,38 @@ export default function USCISFormsPage() {
       ],
       icon: <Users className="h-8 w-8" />,
       image: "/emp.jpeg",
+    },
+
+    //  {
+    //   title: "Green Card Applications",
+    //   description: "End-to-end guidance to help you become a lawful permanent resident of the United States.",
+    //   features: [
+    //     "Family-based green cards",
+    //     "Employment-based green cards",
+    //     "Investment-based green cards",
+    //     "Diversity visa program",
+    //     "Adjustment of status",
+    //     "Consular processing",
+    //     "US tourist visa from any country with appointment support at very reasonable cost",
+    //   ],
+    //   icon: <FileCheck className="h-8 w-8" />,
+    //   image: "/gr.jpg",
+    // },
+    {
+      title: "Work Permit Applications",
+      description: "Secure employment authorization with our expert help.",
+      features: [
+        "A 5 Asylee",
+        "A 10 Withholding of deportation or removal granted  ",
+        "C 8 Asylum application pending",
+        "C 9 Pending adjustment of status  ",
+        "C 31 VAWA self-petitioners with an approved Form I-360 ",
+        "C 3 C F-1 student",
+        "A 19 U-1 nonimmigrant",
+        "Form I-765 – Application for Employment Authorization (EAD)",
+      ],
+      icon: <Users className="h-8 w-8" />,
+      image: "/wpermit1.jpg",
     },
     // {
     //   title: "Citizenship & Naturalization Forms",
@@ -80,23 +112,23 @@ export default function USCISFormsPage() {
       icon: <Award className="h-8 w-8" />,
       image: "/visa14.jpg",
     },
-    {
-      title: "Adjustment of Status & Residency",
-      description:
-        "Allows eligible applicants to adjust their immigration status to lawful permanent residency.",
-      features: [
-        " Application to Register Permanent Residence or Adjust Status",
-      ],
-      icon: <Award className="h-8 w-8" />,
-      image: "/visa19.jpg",
-    },
+    // {
+    //   title: "Adjustment of Status & Residency",
+    //   description:
+    //     "Allows eligible applicants to adjust their immigration status to lawful permanent residency.",
+    //   features: [
+    //     " Application to Register Permanent Residence or Adjust Status",
+    //   ],
+    //   icon: <Award className="h-8 w-8" />,
+    //   image: "/visa19.jpg",
+    // },
     {
       title: "Travel & Entry Documents",
       description:
         "Grants authorization for international travel, reentry, or lawful entry into the United States.",
       features: [
         " Application for Travel Document / Advance Parole / Humanitarian Parole",
-        "Arrival/Departure Record",
+        "Arrival/Departure Record I-94",
       ],
       icon: <Award className="h-8 w-8" />,
       image: "/visa18.jpg",
@@ -112,7 +144,7 @@ export default function USCISFormsPage() {
       image: "/visa17.jpg",
     },
      {
-      title: "Citizenship",
+      title: "(N-400) Citizenship/Naturalization",
       description:"",
       features: [
         "Application Purpose",

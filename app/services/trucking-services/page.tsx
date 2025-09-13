@@ -74,7 +74,7 @@ export default function TruckingServicesPage() {
       image: "/visa13.jpg",
     },
      {
-      title: "Elite Truckers : English Learning for Truck Drivers",
+      title: "Elite Truckers English Hub (For Truck Drivers)",
       description:
         "Why English Training is important",
       features: [

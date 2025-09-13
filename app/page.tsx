@@ -192,10 +192,12 @@ useEffect(() => {
       description: "Comprehensive Immigration Solutions Worldwide",
       items: [
         "Visa Applications ",
-        "Green Card Applications", 
-        "Work Permit Applications",
+        "Emergency",
+        "Form DS - 160",
+        // "Green Card Applications", 
+        // "Work Permit Applications",
       
-        "Immigration Case Expedite",
+        // "Immigration Case Expedite",
       ],
       href: "/services/immigration-visa",
       gradient: "from-blue-500 to-blue-600",
@@ -206,12 +208,11 @@ useEffect(() => {
       title: "USCIS & Immigration Assistance",
       description: "Expert Assistance with All USCIS Forms",
       items: [
-        " (Adjustment of Status)",
-        "(Petition for Relative)",
-        " (Work Permit)",
-        " (Travel Document)",
-        " (Citizenship)",
-        "Form DS-160/DS-260",
+        "Petition for Relative Applications",
+        " Work Permit Applications",
+        " Travel Document",
+        " (N-400) Citizenship/Naturalization",
+        "Form DS-260",
       ],
       href: "/services/usics-forms",
       gradient: "from-blue-500 to-blue-600",
@@ -222,12 +223,13 @@ useEffect(() => {
       title: "Legal & Documentation",
       description: "Professional Legal Documentation Services",
       items: [
+        "Green Card Applications",
         "Passport Application Assistance",
         "Power of Attorney Services",
         "Affidavit Attestation",
         "OCI (Overseas Citizenship)",
         "Renunciation of Citizenship",
-        "Notary Services"
+        "Immigration Case expedite"
       ],
       href: "/services/legal-documents",
       gradient: "from-blue-500 to-blue-600",
@@ -259,7 +261,7 @@ useEffect(() => {
         "USDOT Registration",
         "Operating Authority Filing",
         "Safety Compliance",
-        "FMCSA Registration"
+        "FMCSA Registration",
       ],
       href: "/services/trucking-services",
       gradient: "from-blue-500 to-blue-600",

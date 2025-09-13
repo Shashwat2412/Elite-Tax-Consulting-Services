@@ -13,6 +13,21 @@ import logo from '../../logofinal.png'
 
 export default function BusinessServicesPage() {
   const businessServices = [
+     {
+      title: "Green Card Applications",
+      description: "End-to-end guidance to help you become a lawful permanent resident of the United States.",
+      features: [
+        "Family-based green cards",
+        "Employment-based green cards",
+        "Investment-based green cards",
+        "Diversity visa program",
+        "Adjustment of status",
+        "Consular processing",
+        "US tourist visa from any country with appointment support at very reasonable cost",
+      ],
+      icon: <FileCheck className="h-8 w-8" />,
+      image: "/gr.jpg",
+    },
     {
       title: "Passport Application Assistance",
       description:
