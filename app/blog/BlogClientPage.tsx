@@ -304,6 +304,11 @@ import svc21 from "../svc21.jpg"
 import svc4 from "../svcv4.jpeg"
 import svc6 from "../svc6.jpg"
 import usics from '../usics.jpg'
+import blog1 from '../../public/blog1.jpg'
+import blog2 from '../../public/blog2.jpg'
+import blog3 from '../../public/blog3.jpeg'
+import blog4 from '../../public/blog4.jpg'
+
 import Image from "next/image"
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
@@ -317,9 +322,9 @@ const blogPosts = [
       "Explore essential tax planning decisions for small businesses, including LLC vs. S-Corp, leveraging QBI deductions, and smart write-offs to thrive in 2025.",
     category: "Business Tax",
     author: "Elite Tax Consulting",
-    date: "2025-01-10",
+    // date: "2025-01-10",
     readTime: "12 min read",
-    image: pro,
+    image: blog1,
     tags: ["Business Tax", "LLC", "S-Corp", "QBI", "Tax Planning"],
     content: `
 # Small Business Tax Planning Guide: LLC vs. S-Corp, QBI, and Smart Write-Offs
@@ -414,9 +419,9 @@ The right business entity choice can save thousands in taxes and provide crucial
       "Learn how to select a tax consultant with the right credentials, experience, and approach to help your small business thrive.",
     category: "Business Tax",
     author: "Elite Tax Consulting",
-    date: "2025-01-08",
+    // date: "2025-01-08",
     readTime: "10 min read",
-    image: svc4, // Placeholder image, as none specified
+    image: blog3, // Placeholder image, as none specified
     tags: ["Tax Consultant", "Small Business", "Tax Planning"],
     content: `
 # How to Choose the Right Tax Consultant + Essential FAQs for Small Business Owners
@@ -515,9 +520,9 @@ Choosing the right tax consultant is a critical step toward financial success. D
       "Simplify your passport applications, Power of Attorney, and citizenship processes with expert guidance from Elite Tax Consulting.",
     category: "Legal Services",
     author: "Elite Tax Consulting",
-    date: "2025-01-05",
+    // date: "2025-01-05",
     readTime: "10 min read",
-    image: svc21,
+    image: blog2,
     tags: ["Passport", "Citizenship", "Power of Attorney", "OCI", "Legal Services"],
     content: `
 # Hassle-Free Passport, POA & Citizenship Services
@@ -606,9 +611,9 @@ If you’re ready to take the stress out of passport applications, POA documenta
       "Navigate U.S. immigration with confidence—learn about visa options, required documents, and how Elite Tax Consulting can guide you.",
     category: "Immigration Services",
     author: "Elite Tax Consulting",
-    date: "2025-01-03",
+    // date: "2025-01-03",
     readTime: "15 min read",
-    image: top,
+    image: blog4,
     tags: ["Immigration", "Visas", "Green Card", "Citizenship"],
     content: `
 # Your Guide to Immigration to the U.S.: Steps, Visas, and Expert Support
@@ -843,8 +848,8 @@ export default function BlogClientPage() {
                           {post.author}
                         </div>
                         <div className="flex items-center">
-                          <CalendarDays className="h-4 w-4 mr-1" />
-                          {new Date(post.date).toLocaleDateString()}
+                          {/* <CalendarDays className="h-4 w-4 mr-1" />
+                          {new Date(post.date).toLocaleDateString()} */}
                         </div>
                       </div>
                       <div className="flex items-center">

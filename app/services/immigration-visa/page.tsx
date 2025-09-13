@@ -55,18 +55,18 @@ export default function ImmigrationVisaPage() {
       icon: <Users className="h-8 w-8" />,
       image: "/wpermit1.jpg",
     },
-    {
-      title: "OCI (Overseas Citizenship of India)",
-      description: "We handle OCI card applications efficiently for those of Indian origin.",
-      features: [
-        "New OCI application",
-        "OCI renewal (passport renewal, lost/damaged)",
-        "Renunciation of Indian citizenship (mandatory before OCI if naturalized abroad)",
-        "Miscellaneous OCI services (address/name updates)",
-      ],
-      icon: <Heart className="h-8 w-8" />,
-      image: "/oci1.jpg",
-    },
+    // {
+    //   title: "OCI (Overseas Citizenship of India)",
+    //   description: "We handle OCI card applications efficiently for those of Indian origin.",
+    //   features: [
+    //     "New OCI application",
+    //     "OCI renewal (passport renewal, lost/damaged)",
+    //     "Renunciation of Indian citizenship (mandatory before OCI if naturalized abroad)",
+    //     "Miscellaneous OCI services (address/name updates)",
+    //   ],
+    //   icon: <Heart className="h-8 w-8" />,
+    //   image: "/oci1.jpg",
+    // },
      {
       title: "Consular & Attestation Services",
       description: "",

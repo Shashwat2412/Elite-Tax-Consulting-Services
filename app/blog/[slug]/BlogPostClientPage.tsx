@@ -1159,14 +1159,17 @@ import { notFound } from "next/navigation"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image"
+
 import { CalendarDays, Clock, User, ArrowLeft, Share2, BookOpen, Home } from 'lucide-react'
 import pro from '../../prof.jpg'
 import top from '../../top.jpg'
 import svc21 from "../../svc21.jpg"
 import svc4 from "../../svcv4.jpeg"
-import svc6 from "../../svc6.jpg"
-import usics from '../../usics.jpg'
-import Image from "next/image"
+import blog1 from '../../../public/blog1.jpg'
+import blog2 from '../../../public/blog2.jpg'
+import blog3 from '../../../public/blog3.jpeg'
+import blog4 from '../../../public/blog4.jpg'
 
 const blogPosts = {
   "small-business-tax-planning": {
@@ -1177,7 +1180,7 @@ const blogPosts = {
     author: "Elite Tax Consulting",
     date: "2025-01-10",
     readTime: "12 min read",
-    image: pro,
+    image: blog1,
     tags: ["Business Tax", "LLC", "S-Corp", "QBI", "Tax Planning"],
     content: `
 # Small Business Tax Planning Guide: LLC vs. S-Corp, QBI, and Smart Write-Offs
@@ -1272,7 +1275,7 @@ The right business entity choice can save thousands in taxes and provide crucial
     author: "Elite Tax Consulting",
     date: "2025-01-08",
     readTime: "10 min read",
-    image: svc4,
+    image: blog3,
     tags: ["Tax Consultant", "Small Business", "Tax Planning"],
     content: `
 # How to Choose the Right Tax Consultant + Essential FAQs for Small Business Owners
@@ -1371,7 +1374,7 @@ Choosing the right tax consultant is a critical step toward financial success. D
     author: "Elite Tax Consulting",
     date: "2025-01-05",
     readTime: "10 min read",
-    image: svc21,
+    image: blog2,
     tags: ["Passport", "Citizenship", "Power of Attorney", "OCI", "Legal Services"],
     content: `
 # Hassle-Free Passport, POA & Citizenship Services
@@ -1460,7 +1463,7 @@ If you’re ready to take the stress out of passport applications, POA documenta
     author: "Elite Tax Consulting",
     date: "2025-01-03",
     readTime: "15 min read",
-    image: top,
+    image: blog4,
     tags: ["Immigration", "Visas", "Green Card", "Citizenship"],
     content: `
 # Your Guide to Immigration to the U.S.: Steps, Visas, and Expert Support
@@ -1624,8 +1627,8 @@ export default function BlogPostClientPage({ params }: { params: { slug: string 
                 {post.author}
               </div>
               <div className="flex items-center">
-                <CalendarDays className="h-4 w-4 mr-2" />
-                {new Date(post.date).toLocaleDateString()}
+                {/* <CalendarDays className="h-4 w-4 mr-2" />
+                {new Date(post.date).toLocaleDateString()} */}
               </div>
               <div className="flex items-center">
                 <Clock className="h-4 w-4 mr-2" />
