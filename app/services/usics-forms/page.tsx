@@ -37,7 +37,7 @@ export default function USCISFormsPage() {
         // "H-1B, L-1, O-1 Applications",
       ],
       icon: <Users className="h-8 w-8" />,
-      image: "/employment.jpg",
+      image: "/emp.jpeg",
     },
     // {
     //   title: "Citizenship & Naturalization Forms",
