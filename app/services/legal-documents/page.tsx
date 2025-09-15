@@ -26,7 +26,7 @@ export default function BusinessServicesPage() {
         "US tourist visa from any country with appointment support at very reasonable cost",
       ],
       icon: <FileCheck className="h-8 w-8" />,
-      image: "/gr.jpg",
+      image: "/gcnew.jpg",
     },
     {
       title: "Passport Application Assistance",
@@ -311,7 +311,7 @@ export default function BusinessServicesPage() {
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button
                       onClick={() => {
-                        const phoneNumber = "13179993738" // Replace with actual WhatsApp number
+                        const phoneNumber = "7188668602" // Replace with actual WhatsApp number
                         const message = "Hi! I'm interested in your business formation services. Can you help me?"
                         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
                         window.open(whatsappUrl, "_blank")

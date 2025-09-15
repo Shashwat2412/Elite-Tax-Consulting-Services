@@ -69,7 +69,7 @@ export default function USCISFormsPage() {
         "Form I-765 – Application for Employment Authorization (EAD)",
       ],
       icon: <Users className="h-8 w-8" />,
-      image: "/wpermit1.jpg",
+      image: "/wpnew.jpg",
     },
     // {
     //   title: "Citizenship & Naturalization Forms",
@@ -154,7 +154,7 @@ export default function USCISFormsPage() {
         "Naturalization Process Steps"
       ],
       icon: <Award className="h-8 w-8" />,
-      image: "/cz.jpeg",
+      image: "/ccznew.jpg",
     },
   ]
 
@@ -308,7 +308,7 @@ export default function USCISFormsPage() {
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button
                       onClick={() => {
-                        const phoneNumber = "13179993738" // Replace with actual WhatsApp number
+                        const phoneNumber = "7188668602" // Replace with actual WhatsApp number
                         const message = "Hi! I'm interested in your business formation services. Can you help me?"
                         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
                         window.open(whatsappUrl, "_blank")

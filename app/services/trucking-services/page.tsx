@@ -41,7 +41,7 @@ export default function TruckingServicesPage() {
         "Hazmat endorsement assistance",
       ],
       icon: <FileCheck className="h-8 w-8" />,
-      image: "/visa11.jpg",
+      image: "/trnew.jpg",
     },
     {
       title: "Safety & Compliance Services",
@@ -233,7 +233,7 @@ export default function TruckingServicesPage() {
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button
                       onClick={() => {
-                        const phoneNumber = "13179993738" // Replace with actual WhatsApp number
+                        const phoneNumber = "7188668602" // Replace with actual WhatsApp number
                         const message = "Hi! I'm interested in your business formation services. Can you help me?"
                         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
                         window.open(whatsappUrl, "_blank")

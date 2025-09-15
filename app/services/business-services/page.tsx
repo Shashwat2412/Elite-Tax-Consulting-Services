@@ -25,7 +25,7 @@ export default function BusinessServicesPage() {
         "Ongoing Support"
       ],
       icon: <Building className="h-8 w-8" />,
-      image: "/llc1.jpg",
+      image: "/llc3.jpg",
     },
 
       {
@@ -40,7 +40,7 @@ export default function BusinessServicesPage() {
         "Financial Management"
       ],
       icon: <Building className="h-8 w-8" />,
-      image: "/llc2.jpg",
+      image: "/scorpnew.jpg",
     },
 
       {
@@ -55,7 +55,7 @@ export default function BusinessServicesPage() {
         "Employee Benefits Setup"
       ],
       icon: <Building className="h-8 w-8" />,
-      image: "/llc3.jpg",
+      image: "/ccorpnew.jpg",
     },
    
   ]
@@ -284,7 +284,7 @@ export default function BusinessServicesPage() {
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button
                       onClick={() => {
-                        const phoneNumber = "13179993738" // Replace with actual WhatsApp number
+                        const phoneNumber = "7188668602" // Replace with actual WhatsApp number
                         const message = "Hi! I'm interested in your business formation services. Can you help me?"
                         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
                         window.open(whatsappUrl, "_blank")
