@@ -26,7 +26,7 @@ export default function TruckingServicesPage() {
         "FMCSA compliance setup",
       ],
       icon: <Truck className="h-8 w-8" />,
-      image: "/visa10.jpg",
+      image: "/mcdot2.png",
     },
     {
       title: "Trucking Permits & Licensing",
@@ -41,7 +41,7 @@ export default function TruckingServicesPage() {
         "Hazmat endorsement assistance",
       ],
       icon: <FileCheck className="h-8 w-8" />,
-      image: "/trnew.jpg",
+      image: "/permit.png",
     },
     {
       title: "Safety & Compliance Services",

@@ -97,7 +97,7 @@ export default function ImmigrationVisaPage() {
         "Emergency Certificate (travel document to return to India)",
       ],
       icon: <Heart className="h-8 w-8" />,
-      image: "/em.jpeg",
+      image: "/em111.webp",
     },
     
   ]

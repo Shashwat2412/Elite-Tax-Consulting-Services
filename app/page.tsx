@@ -208,6 +208,7 @@ useEffect(() => {
       title: "USCIS & Immigration Assistance",
       description: "Expert Assistance with All USCIS Forms",
       items: [
+        "Green Card Applications",
         "Petition for Relative Applications",
         " Work Permit Applications",
         " Travel Document",
@@ -223,7 +224,7 @@ useEffect(() => {
       title: "Legal & Documentation",
       description: "Professional Legal Documentation Services",
       items: [
-        "Green Card Applications",
+        // "Green Card Applications",
         "Passport Application Assistance",
         "Power of Attorney Services",
         "Affidavit Attestation",
