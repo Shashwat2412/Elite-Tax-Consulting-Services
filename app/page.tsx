@@ -1468,7 +1468,7 @@ useEffect(() => {
                       </p>
                       <div className="text-xs md:text-sm text-gray-700">
                         <p className="font-medium">Elite Tax & Consulting Services Inc.</p>
-                        <p>180 US-31, Whiteland, IN 46184</p>
+                        <p>981W County Line Rd, Greenwood, 46142 Indiana</p>
                         <p>United States</p>
                         <p>Gurpreet Singh (Registered tax Preparer)</p>
                         <p>Fax 929-810-3644</p>
@@ -1478,7 +1478,7 @@ useEffect(() => {
                           variant="outline"
                            onClick={() =>
     window.open(
-      "https://www.google.com/maps/dir//180+US-31+Whiteland,+IN+46184/@39.5523292,-86.0884002,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x886b687bd41ff693:0x5106f881bed5d97e",
+      "https://maps.app.goo.gl/KMUZ87xRkNLg6TeJ8",
       "_blank"
     )
   }
@@ -1522,7 +1522,7 @@ useEffect(() => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-64 md:h-96 lg:h-full min-h-[400px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.8234567890123!2d-86.1234567!3d39.5678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50c123456789%3A0x123456789abcdef0!2s180%20US-31%2C%20Whiteland%2C%20IN%2046184%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.7954447052953!2d-86.13884202402747!3d39.635163571575916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b5c566a755261%3A0xc06b673892e1b9f8!2s981%20County%20Line%20Rd%2C%20Greenwood%2C%20IN%2046142%2C%20USA!5e1!3m2!1sen!2sin!4v1760637331184!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -1590,7 +1590,7 @@ useEffect(() => {
                 </li>
                 <li className="flex items-start hover:text-white transition-colors">
                   <MapPin className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>180 US-31, Whiteland, IN 46184, United States</span>
+                  <span>981W County Line Rd, Greenwood, 46142 Indiana</span>
                 </li>
               </ul>
             </div>
@@ -1612,7 +1612,7 @@ useEffect(() => {
           </div>
 
           <div className="border-t border-blue-800 mt-6 md:mt-8 pt-6 md:pt-8 text-center text-xs md:text-sm text-blue-300">
-            <p>&copy; 2024 Elite Tax Consulting Services. All rights reserved.</p>
+            <p>&copy; 2025 Elite Tax Consulting Services. All rights reserved.</p>
           </div>
         </div>
       </footer>
