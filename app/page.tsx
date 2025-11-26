@@ -141,7 +141,7 @@ useEffect(() => {
   }
 
   const handleGoogleReview = () => {
-    const googleReviewUrl = "https://g.page/r/CfS4mtz8vBL8EBI/review"
+    const googleReviewUrl = "https://g.page/r/CaPd9-jDhAa6EBE/review"
     window.open(googleReviewUrl, "_blank")
   }
   const handleWhatsAppClick = () => {
@@ -373,7 +373,7 @@ useEffect(() => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>elitetaxandconsultingservices@gmail.com</span>
+                  <span>info@elitetaxconsultingservices.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="h-4 w-4" />
@@ -1254,7 +1254,7 @@ useEffect(() => {
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">What Our Clients Say</h2>
             <p className="text-base md:text-lg text-white max-w-2xl mx-auto mb-6 md:mb-8">
-              Real reviews from our satisfied clients on Google
+              Elite Tax & Consulting Services would love your feedback. Post a review to our profile.
             </p>
             <Button
               onClick={handleGoogleReview}
@@ -1426,7 +1426,7 @@ useEffect(() => {
                     icon: <Mail className="h-8 md:h-12 w-8 md:w-12 text-blue-600 mx-auto mb-4" />,
                     title: "Email Us",
                     description: "Send us your questions",
-                    action: "elitetaxandconsultingservices@gmail.com",
+                    action: "info@elitetaxconsultingservices.com",
                     gradient: "from-green-500 to-green-600",
                   },
                 ].map((contact, index) => (
@@ -1580,7 +1580,7 @@ useEffect(() => {
 
                 </li>
                 <li className="flex items-center hover:text-white transition-colors">
-                  <Mail className="h-4 w-4 mr-2" /> elitetaxandconsultingservices@gmail.com
+                  <Mail className="h-4 w-4 mr-2" /> info@elitetaxconsultingservices.com
 
                 </li>
                 <li className="flex items-center hover:text-white transition-colors">
