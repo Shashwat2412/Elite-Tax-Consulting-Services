@@ -174,7 +174,7 @@ export default function ImmigrationVisaPage() {
           <div className="text-center mb-12 animate-fade-in">
             {/* <Badge className="bg-blue-100 text-blue-800 mb-4">Immigration & Visa Services</Badge> */}
             <h1 className="text-4xl md:text-5xl font-bod text-navy-900 mb-6">
-              <span className="text-white font-bold"> Indian Embassy & Visa Services</span> 
+              <span className="text-white font-bold">  Visa Application & Appointment Assistance</span> 
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             Navigate visa applications effortlessly with our comprehensive services. We

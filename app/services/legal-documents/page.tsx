@@ -29,7 +29,7 @@ export default function BusinessServicesPage() {
     //   image: "/gcnew.jpg",
     // },
     {
-      title: "Passport Application Assistance",
+      title: "Indian Embassy Document Services",
       description:
         "Hassle-free guidance and support for your passport applications.",
       features: [
@@ -40,7 +40,7 @@ export default function BusinessServicesPage() {
        
       ],
       icon: <Building className="h-8 w-8" />,
-      image: "/oci3.jpg",
+      image: "/em111.webp",
     },
     {
       title: "Power of Attorney (POA) Services",
@@ -199,10 +199,10 @@ export default function BusinessServicesPage() {
           <div className="text-center mb-12 animate-fade-in">
           
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              <span className="text-white">Legal</span> & Documentation Services
+              <span className="text-white"></span> Documentation Services
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-           Comprehensive legal and documentation support to simplify complex procedures with accuracy and efficiency.Trusted legal solutions and seamless documentation, all in one place.
+           Comprehensive documentation support to simplify complex procedures with accuracy and efficiency.Trusted and seamless documentation, all in one place.
             </p>
           </div>
 
@@ -343,9 +343,9 @@ export default function BusinessServicesPage() {
       <section className="py-16 bg-gradient-to-r from-navy-900 to-blue-800 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Our Legal Services?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Our Documentation Services?</h2>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-Trusted legal solutions and seamless documentation, all in one place.            </p>
+Trusted documentation solutions and seamless processes, all in one place.            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">

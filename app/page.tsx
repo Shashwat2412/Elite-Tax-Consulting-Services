@@ -69,7 +69,7 @@ export default function HomePage() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false) // New state for modal
-  const { reviewsData, loading: reviewsLoading, error: reviewsError } = useReviews()
+  // const { reviewsData, loading: reviewsLoading, error: reviewsError } = useReviews()
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -144,6 +144,32 @@ useEffect(() => {
     const googleReviewUrl = "https://g.page/r/CaPd9-jDhAa6EBE/review"
     window.open(googleReviewUrl, "_blank")
   }
+
+  const [reviewsData, setReviewsData] = useState(null);
+const [reviewsLoading, setReviewsLoading] = useState(true);
+const [reviewsError, setReviewsError] = useState(false);
+
+useEffect(() => {
+  const fetchReviews = async () => {
+    try {
+      const res = await fetch("/api/reviews");
+      if (!res.ok) throw new Error("Failed");
+      const data = await res.json();
+      setReviewsData(data);
+    } catch {
+      setReviewsError(true);
+    } finally {
+      setReviewsLoading(false);
+    }
+  };
+
+  fetchReviews();
+}, []);
+
+
+
+
+
   const handleWhatsAppClick = () => {
     const phoneNumber = "7188668602"
     const message = "Hi! I'm interested in your tax and immigration services. Can you help me?"
@@ -188,7 +214,7 @@ useEffect(() => {
     },
     {
       icon: <Globe className="h-8 w-8" />,
-      title: "Indian Embassy & Visa Services",
+      title: " Visa Application & Appointment Assistance",
       description: "Comprehensive Immigration Solutions Worldwide",
       items: [
         "Visa Applications ",
@@ -221,11 +247,11 @@ useEffect(() => {
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Legal & Documentation",
-      description: "Professional Legal Documentation Services",
+      title: "Documentation Services",
+      description: "Professional Documentation Services",
       items: [
         // "Green Card Applications",
-        "Passport Application Assistance",
+        "Indian Embassy Document Services",
         "Power of Attorney Services",
         "Affidavit Attestation",
         "OCI (Overseas Citizenship)",
@@ -1310,7 +1336,7 @@ useEffect(() => {
           )}
 
           {/* Reviews Display */}
-          {/* {reviewsData && !reviewsLoading && (
+          {reviewsData && !reviewsLoading && (
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
                 {reviewsData.reviews.slice(0, 4).map((review) => (
@@ -1350,14 +1376,14 @@ useEffect(() => {
                       <Star key={i} className="h-5 md:h-6 w-5 md:w-6 fill-current" />
                     ))}
                   </div>
-                  <span className="text-xl md:text-2xl font-bold text-navy-900">{reviewsData.averageRating}/5</span>
+                  <span className="text-xl md:text-2xl font-bold text-white">{reviewsData.averageRating}/5</span>
                 </div>
-                <p className="text-sm md:text-base text-gray-600">
+                <p className="text-sm md:text-base font-bold text-white">
                   Based on {reviewsData.totalReviews}+ Google Reviews
                 </p>
               </div>
             </>
-          )} */}
+          )}
         </div>
       </section>
 

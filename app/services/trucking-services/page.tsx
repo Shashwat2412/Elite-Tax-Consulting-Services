@@ -73,18 +73,18 @@ export default function TruckingServicesPage() {
       icon: <Users className="h-8 w-8" />,
       image: "/visa13.jpg",
     },
-     {
-      title: "Elite Truckers English Hub (For Truck Drivers)",
-      description:
-        "Why English Training is important",
-      features: [
-        "Helps truckers communicate confidently in daily life and work-related situations",
-        "Essential for understanding DOT inspections, police interactions, and road safety signs",
-        "Improves job opportunities, income, and career growth in the U.S. trucking industry.",
-      ],
-      icon: <Users className="h-8 w-8" />,
-      image: "/english.webp",
-    },
+    //  {
+    //   title: "Elite Truckers English Hub (For Truck Drivers)",
+    //   description:
+    //     "Why English Training is important",
+    //   features: [
+    //     "Helps truckers communicate confidently in daily life and work-related situations",
+    //     "Essential for understanding DOT inspections, police interactions, and road safety signs",
+    //     "Improves job opportunities, income, and career growth in the U.S. trucking industry.",
+    //   ],
+    //   icon: <Users className="h-8 w-8" />,
+    //   image: "/english.webp",
+    // },
   ]
 
   const benefits = [
