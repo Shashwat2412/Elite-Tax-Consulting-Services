@@ -145,7 +145,7 @@ useEffect(() => {
     window.open(googleReviewUrl, "_blank")
   }
 
-  const [reviewsData, setReviewsData] = useState(null);
+const [reviewsData, setReviewsData] = useState<{ reviews: any[]; averageRating: number; totalReviews: number } | null>(null);
 const [reviewsLoading, setReviewsLoading] = useState(true);
 const [reviewsError, setReviewsError] = useState(false);
 
@@ -1336,7 +1336,7 @@ useEffect(() => {
           )}
 
           {/* Reviews Display */}
-          {reviewsData && !reviewsLoading && (
+          {reviewsData && !reviewsLoading && reviewsData.reviews && (
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
                 {reviewsData.reviews.slice(0, 4).map((review) => (
