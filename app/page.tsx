@@ -681,12 +681,12 @@ useEffect(() => {
                       <SelectContent>
                         <SelectItem value="tax-services">Personal Tax Services</SelectItem>
                         <SelectItem value="business-tax">Business Tax Services</SelectItem>
-                        <SelectItem value="immigration-visa">Indian Embassy & Visa Services</SelectItem>
+                        <SelectItem value="immigration-visa">Visa Application & Appointment Assistance</SelectItem>
                         <SelectItem value="uscis-forms">USCIS & Immigration Assistance</SelectItem>
-                        <SelectItem value="legal-documents">Legal & Documentation Services</SelectItem>
+                        <SelectItem value="legal-documents">Documentation Services</SelectItem>
                         <SelectItem value="business-services">Business & Corporate Services</SelectItem>
                         <SelectItem value="trucking-services">Trucking Compliance & Setup</SelectItem>
-                               <SelectItem value="english">Elite Trucker English Learn</SelectItem>
+                               {/* <SelectItem value="english">Elite Trucker English Learn</SelectItem> */}
                         <SelectItem value="other">Other / Not Sure</SelectItem>
                       </SelectContent>
                     </Select>
