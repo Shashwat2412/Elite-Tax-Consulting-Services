@@ -676,7 +676,7 @@ useEffect(() => {
                   <div>
                     <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
                       <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-xs sm:text-sm h-8 sm:h-10">
-                        <SelectValue placeholder="What service are you looking for?*" />
+                        <SelectValue placeholder="What service are you looking for ?*" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="tax-services">Personal Tax Services</SelectItem>
