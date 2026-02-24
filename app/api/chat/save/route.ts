@@ -89,7 +89,7 @@ export async function POST(request: Request) {
                 <p><strong>Elite Tax Consulting Services Team</strong></p>
                 <p style="color: #6b7280; font-size: 14px;">
                   📞 Phone: (555) 123-4567<br>
-                  📧 Email: info@elitetax.com<br>
+                  📧 Email: contact@elitetaxconsultingservices.com<br>
                   💬 Chat: Available on our website
                 </p>
               </div>
@@ -104,7 +104,7 @@ export async function POST(request: Request) {
 
       const adminEmailResult = await resend.emails.send({
         from: "Elite Tax Consulting <onboarding@resend.dev>",
-        to: ["gp@elitetaxconsultingservices.com"],
+        to: ["contact@elitetaxconsultingservices.com"],
         subject: `💬 New Chat Inquiry - ${data.name || "Anonymous"}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -193,7 +193,7 @@ export async function POST(request: Request) {
       const accessToken = await getValidAccessToken()
 
       if (accessToken) {
-        const CHATBOT_SHEET_URL = `https://sheets.googleapis.com/v4/spreadsheets/1jtXzrrpH9eoPTdixbCC--qNI_zDGj9mCsnk2L5FLCZ4/values/Sheet1:append?valueInputOption=RAW`
+        const CHATBOT_SHEET_URL = `https://sheets.googleapis.com/v4/spreadsheets/1fAykYWjQQ9VRRxy0UPzXnR1QJu-LmH7g_E2TcQD0kGE/values/Sheet1:append?valueInputOption=RAW`
 
         const sheetData = {
           values: [

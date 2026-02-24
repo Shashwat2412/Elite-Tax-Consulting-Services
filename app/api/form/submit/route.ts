@@ -59,7 +59,7 @@ export async function POST(request: Request) {
               dateTime: endDateTime.toISOString(),
               timeZone: "America/New_York",
             },
-            attendees: [{ email: formData.email }, { email: "gp@elitetaxconsultingservices.com" }],
+            attendees: [{ email: formData.email }, { email: "contact@elitetaxconsultingservices.com" }],
             conferenceData: {
               createRequest: {
                 requestId: `form-meeting-${Date.now()}`,
@@ -162,7 +162,7 @@ export async function POST(request: Request) {
                 <p><strong>Elite Tax Consulting Services Team</strong></p>
                 <p style="color: #6b7280; font-size: 14px;">
                   📞 Phone: (555) 123-4567<br>
-                  📧 Email: info@elitetax.com<br>
+                  📧 Email: contact@elitetaxconsultingservices.com<br>
                   📍 Address: 180 US-31, Whiteland, IN 46184
                 </p>
               </div>
@@ -175,11 +175,11 @@ export async function POST(request: Request) {
       }
 
       // Email to admin
-      console.log("Sending email to admin: gp@elitetaxconsultingservices.com")
+      console.log("Sending email to admin: contact@elitetaxconsultingservices.com")
 
       const adminEmailResult = await resend.emails.send({
         from: "Elite Tax Consulting <onboarding@resend.dev>", // Using default Resend domain
-        to: ["gp@elitetaxconsultingservices.com"],
+        to: ["contact@elitetaxconsultingservices.com"],
         subject: `🔔 New Consultation Request - ${formData.firstName} ${formData.lastName}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -255,7 +255,7 @@ export async function POST(request: Request) {
       const accessToken = await getValidAccessToken()
 
       if (accessToken) {
-        const FORM_SHEET_URL = `https://sheets.googleapis.com/v4/spreadsheets/161jlyT09HZ3cbmfS6MjWNy6F-A8DvVPOdKK4_nxGtIQ/values/Sheet1:append?valueInputOption=RAW`
+        const FORM_SHEET_URL = `https://sheets.googleapis.com/v4/spreadsheets/1q1i3I7fxgf-QybQgtOi9hmZ8PFWfCLoqib11MErbDyo/values/Sheet1:append?valueInputOption=RAW`
 
         const sheetData = {
           values: [

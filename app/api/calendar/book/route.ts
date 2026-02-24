@@ -54,7 +54,7 @@ export async function POST(request: Request) {
             dateTime: endDateTime.toISOString(),
             timeZone: "America/New_York",
           },
-          attendees: [{ email: userData.email || userData.contact }, { email: "gp@elitetaxconsultingservices.com" }],
+          attendees: [{ email: userData.email || userData.contact }, { email: "contact@elitetaxconsultingservices.com" }],
           conferenceData: {
             createRequest: {
               requestId: `chat-meeting-${Date.now()}`,
@@ -147,7 +147,7 @@ export async function POST(request: Request) {
                 <p><strong>Elite Tax Consulting Services Team</strong></p>
                 <p style="color: #6b7280; font-size: 14px;">
                   📞 Phone: (555) 123-4567<br>
-                  📧 Email: info@elitetax.com<br>
+                  📧 Email: contact@elitetaxconsultingservices.com<br>
                   💬 Chat: Available on our website
                 </p>
               </div>
@@ -161,7 +161,7 @@ export async function POST(request: Request) {
       // Email to admin
       await resend.emails.send({
         from: "Elite Tax Consulting <onboarding@resend.dev>",
-        to: ["gp@elitetaxconsultingservices.com"],
+        to: ["contact@elitetaxconsultingservices.com"],
         subject: `📅 New Chat Meeting Booked - ${userData.name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
