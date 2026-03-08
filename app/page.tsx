@@ -676,7 +676,7 @@ useEffect(() => {
                   <div>
                     <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
                       <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 text-xs sm:text-sm h-8 sm:h-10">
-                        <SelectValue placeholder="What service are you looking for?*" />
+                        <SelectValue placeholder="What service are you looking for ?*" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="tax-services">Personal Tax Services</SelectItem>
@@ -1622,6 +1622,15 @@ useEffect(() => {
             </div>
 
             <div className="animate-slide-in-up" style={{ animationDelay: "0.3s" }}>
+              <h4 className="font-semibold mb-4 text-sm md:text-base">Legal</h4>
+              <ul className="space-y-2 text-xs md:text-sm text-blue-100">
+                <li className="hover:text-white transition-colors cursor-pointer">
+                  <Link href="/privacy">Privacy Policy</Link>
+                </li>
+                {/* <li className="hover:text-white transition-colors cursor-pointer">
+                  <Link href="/terms">Terms of Use</Link>
+                </li> */}
+              </ul>
               <h4 className="font-semibold mb-4 text-sm md:text-base">Follow Us</h4>
               <div className="flex flex-col space-y-2">
                 <Link href="https://www.instagram.com/elite_taxandconsultingservices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
@@ -1638,7 +1647,7 @@ useEffect(() => {
           </div>
 
           <div className="border-t border-blue-800 mt-6 md:mt-8 pt-6 md:pt-8 text-center text-xs md:text-sm text-blue-300">
-            <p>&copy; 2025 Elite Tax Consulting Services. All rights reserved.</p>
+            <p>&copy; 2026 Elite Tax Consulting Services. All rights reserved.</p>
           </div>
         </div>
       </footer>
