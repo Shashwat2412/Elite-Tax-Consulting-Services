@@ -1631,7 +1631,7 @@ useEffect(() => {
                   <Link href="/terms">Terms of Use</Link>
                 </li> */}
               </ul>
-              <h4 className="font-semibold mb-4 text-sm md:text-base">Follow Us</h4>
+              <h4 className="font-semibold mb-4 text-sm md:text-base mt-4">Follow Us</h4>
               <div className="flex flex-col space-y-2">
                 <Link href="https://www.instagram.com/elite_taxandconsultingservices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                     <Button
